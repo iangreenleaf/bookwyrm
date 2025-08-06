@@ -4,6 +4,7 @@ from typing import AnyStr
 
 from environs import Env
 
+import dj_database_url
 
 import requests
 from django.utils.translation import gettext_lazy as _
@@ -273,16 +274,13 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": env("POSTGRES_DB", "bookwyrm"),
-        "USER": env("POSTGRES_USER", "bookwyrm"),
-        "PASSWORD": env("POSTGRES_PASSWORD", "bookwyrm"),
-        "HOST": env("POSTGRES_HOST", ""),
-        "PORT": env.int("PGPORT", 5432),
-    },
+    "default": dj_database_url.config(
+            env="DATABASE_URL",
+            conn_max_age=600,
+            conn_health_checks=True,
+            ssl_require=True,
+        ),
 }
-
 
 LOGIN_URL = "/login/"
 AUTH_USER_MODEL = "bookwyrm.User"
