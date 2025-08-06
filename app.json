@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "postdeploy": "python3 manage.py initdb"
+  }
+}
