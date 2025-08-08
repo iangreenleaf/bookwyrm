@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dokku": {
-      "predeploy": "python3 manage.py compile_themes && python3 manage.py collectstatic"
+      "predeploy": "python3 manage.py compile_themes && python3 manage.py collectstatic --noinput"
     }
   }
 }
