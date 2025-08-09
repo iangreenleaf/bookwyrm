@@ -359,7 +359,10 @@ if USE_HTTPS:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
 
-PORT = env.int("PORT", 443 if USE_HTTPS else 80)
+if env("PORT", "") == "":
+    PORT = 80
+else:
+    PORT = env.int("PORT", 443 if USE_HTTPS else 80)
 
 # If we are behind reverse_proxy, we can assume that protocol://domain should point to correct webserver that routes to our nginx
 if (
