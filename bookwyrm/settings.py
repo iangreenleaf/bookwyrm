@@ -355,7 +355,10 @@ IMAGEKIT_DEFAULT_CACHEFILE_STRATEGY = "bookwyrm.thumbnail_generation.Strategy"
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 CSP_ADDITIONAL_HOSTS = env.list("CSP_ADDITIONAL_HOSTS", [])
-PORT = env.int("PORT", 80)
+if env("PORT", "") == "":
+    PORT = 80
+else:
+    PORT = env.int("PORT")
 
 if DOMAIN == "localhost":
     # only run insecurely when testing on localhost
