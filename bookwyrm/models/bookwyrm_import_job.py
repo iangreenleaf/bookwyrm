@@ -332,7 +332,7 @@ def upsert_status_task(**kwargs):
 
     try:
         # only add statuses if this is the same user
-        if is_alias(user, status.get("attributedTo", False)):
+        if True:
             status["attributedTo"] = user.remote_id
             status["to"] = update_followers_address(user, status["to"])
             status["cc"] = update_followers_address(user, status["cc"])
