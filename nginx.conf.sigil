@@ -127,6 +127,28 @@ server {
 
   {{ if $.CLIENT_MAX_BODY_SIZE }}client_max_body_size {{ $.CLIENT_MAX_BODY_SIZE }};{{ end }}
 
+  # directly serve static files from the
+  # bookwyrm filesystem using sendfile.
+  # make the logs quieter by not reporting these requests
+  location /static/ {
+      root {{ $.DOKKU_LIB_ROOT }}/data/storage/{{ $.APP }};
+      try_files $uri =404;
+      add_header X-Cache-Status STATIC;
+      access_log off;
+  }
+
+  # same with image files not in static folder
+  location /images/ {
+      location ~ \.(bmp|ico|jpg|jpeg|png|svg|tif|tiff|webp)$ {
+          root {{ $.DOKKU_LIB_ROOT }}/data/storage/{{ $.APP }};
+          try_files $uri =404;
+          add_header X-Cache-Status STATIC;
+          access_log off;
+      }
+      # block access to any non-image files from images
+      return 403;
+  }
+
   error_page 400 401 402 403 405 406 407 408 409 410 411 412 413 414 415 416 417 418 420 422 423 424 426 428 429 431 444 449 450 451 /400-error.html;
   location /400-error.html {
     root {{ $.DOKKU_LIB_ROOT }}/data/nginx-vhosts/dokku-errors;
