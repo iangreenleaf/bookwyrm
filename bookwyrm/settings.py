@@ -84,6 +84,7 @@ FONT_DIR = os.path.join(STATIC_ROOT, "fonts")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", False)
+USE_HTTPS = env.bool("USE_HTTPS", not DEBUG)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY", None)
@@ -373,6 +374,8 @@ if (
     or (env("NGINX_SETUP", "https") == "reverse_proxy")
 ):
     NETLOC = DOMAIN
+else:
+    NETLOC = f"{DOMAIN}:{PORT}"
 
 BASE_URL = f"{PROTOCOL}://{NETLOC}"
 CSRF_TRUSTED_ORIGINS = [BASE_URL]
