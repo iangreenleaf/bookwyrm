@@ -25,6 +25,8 @@ dokku config:set --no-restart bookwyrm EMAIL_USE_SSL=false
 dokku config:set --no-restart bookwyrm EMAIL_SENDER_NAME=bookwyrm
 dokku config:set --no-restart bookwyrm EMAIL_SENDER_DOMAIN=mydomain.net
 dokku config:set --no-restart bookwyrm DISABLE_COLLECTSTATIC=1
+dokku config:set --no-restart bookwyrm USE_HTTPS=true
+dokku config:set --no-restart bookwyrm NGINX_SETUP=reverse_proxy
 
 dokku storage:ensure-directory bookwyrm --chown herokuish
 dokku storage:mount bookwyrm /var/lib/dokku/data/storage/bookwyrm/images:/app/images
