@@ -87,11 +87,8 @@ DEBUG = env.bool("DEBUG", False)
 USE_HTTPS = env.bool("USE_HTTPS", not DEBUG)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("SECRET_KEY", None)
-if not DEBUG and SECRET_KEY in [
-    None,
-    "7(2w1sedok=aznpq)ta1mc4i%4h=xx@hxwx*o57ctsuml0x%fr",
-]:
+SECRET_KEY = env("SECRET_KEY")
+if not DEBUG and SECRET_KEY == "7(2w1sedok=aznpq)ta1mc4i%4h=xx@hxwx*o57ctsuml0x%fr":
     raise ImproperlyConfigured("You must change the SECRET_KEY env variable")
 
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", ["*"])
@@ -386,6 +383,7 @@ USER_AGENT = f"BookWyrm (BookWyrm/{VERSION}; +{BASE_URL})"
 
 USE_S3 = env.bool("USE_S3", False)
 USE_AZURE = env.bool("USE_AZURE", False)
+S3_SIGNED_URL_EXPIRY = env.int("S3_SIGNED_URL_EXPIRY", 900)
 
 if USE_S3:
     # AWS settings
@@ -420,6 +418,14 @@ if USE_S3:
             "OPTIONS": {
                 "location": "static",
                 "default_acl": "public-read",
+            },
+        },
+        "exports": {
+            "BACKEND": "storages.backends.s3.S3Storage",
+            "OPTIONS": {
+                "location": "images",
+                "default_acl": None,
+                "file_overwrite": False,
             },
         },
     }
@@ -465,6 +471,9 @@ elif USE_AZURE:
                 "location": "static",
             },
         },
+        "exports": {
+            "BACKEND": None,  # not implemented yet
+        },
     }
     # Azure Static settings
     STATIC_LOCATION = "static"
@@ -490,6 +499,12 @@ else:
         "staticfiles": {
             "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
         },
+        "exports": {
+            "BACKEND": "django.core.files.storage.FileSystemStorage",
+            "OPTIONS": {
+                "location": "exports",
+            },
+        },
     }
     # Static settings
     STATIC_URL = "/static/"
@@ -500,39 +515,6 @@ else:
     # Content Security Policy
     CSP_DEFAULT_SRC = ["'self'"] + CSP_ADDITIONAL_HOSTS
     CSP_SCRIPT_SRC = ["'self'"] + CSP_ADDITIONAL_HOSTS
-
-# storage of user export and import files
-USE_S3_FOR_EXPORTS = env.bool("USE_S3_FOR_EXPORTS", False)
-
-# Must use a different bucket for exports
-# This ensures we can secure use import/export files
-# for S3 services without ACL (e.g. Backblaze B2 or Cloudflare R2)
-S3_SIGNED_URL_EXPIRY = env.int("S3_SIGNED_URL_EXPIRY", 900)
-if USE_S3_FOR_EXPORTS:
-    STORAGES["exports"] = {
-        "BACKEND": "storages.backends.s3.S3Storage",
-        "OPTIONS": {
-            "location": "exports",
-            "default_acl": "private",
-            "file_overwrite": False,
-            "object_parameters": {"CacheControl": "max-age=86400"},
-            "access_key": env("EXPORTS_ACCESS_KEY_ID", env("AWS_ACCESS_KEY_ID")),
-            "secret_key": env(
-                "EXPORTS_SECRET_ACCESS_KEY", env("AWS_SECRET_ACCESS_KEY")
-            ),
-            "region_name": env("EXPORTS_S3_REGION_NAME", env("AWS_S3_REGION_NAME")),
-            "endpoint_url": env("EXPORTS_S3_ENDPOINT_URL", env("AWS_S3_ENDPOINT_URL")),
-            "custom_domain": env("EXPORTS_S3_CUSTOM_DOMAIN", None),
-            "bucket_name": env("EXPORTS_STORAGE_BUCKET_NAME"),
-        },
-    }
-else:
-    STORAGES["exports"] = {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
-        "OPTIONS": {
-            "location": "exports",
-        },
-    }
 
 CSP_INCLUDE_NONCE_IN = ["script-src"]
 
