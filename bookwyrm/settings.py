@@ -282,6 +282,26 @@ DATABASES = {
             ssl_require=True,
         ),
 }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        "default": dj_database_url.config(
+            env="DATABASE_URL",
+            conn_max_age=600,
+            conn_health_checks=True,
+            ssl_require=True,
+        )
+    }
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": env("POSTGRES_DB", "bookwyrm"),
+            "USER": env("POSTGRES_USER", "bookwyrm"),
+            "PASSWORD": env("POSTGRES_PASSWORD", "bookwyrm"),
+            "HOST": env("POSTGRES_HOST", ""),
+            "PORT": env.int("PGPORT", 5432),
+        }
+    }
 
 LOGIN_URL = "/login/"
 AUTH_USER_MODEL = "bookwyrm.User"
