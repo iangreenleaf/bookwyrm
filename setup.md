@@ -4,6 +4,7 @@
 1. Create DB:
     postgres=# CREATE USER bookwyrm WITH ENCRYPTED PASSWORD 'mypassword';
     postgres=# CREATE DATABASE bookwyrm OWNER bookwyrm;
+    postgres=# ALTER USER bookwyrm CREATEDB;
 1. `python manage.py migrate`
 1. `python manage.py migrate django_celery_beat`
 1. `python manage.py initdb`
