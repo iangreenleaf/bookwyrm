@@ -46,6 +46,7 @@ main = [
     "grpcio>=1.57.0",
     "setuptools>=65.5.1",
     "tornado>=6.3.3",
+    "dj-database-url>=3.1.2",
 ]
 dev = [
     "celery-types==0.22.0",
@@ -151,3 +152,6 @@ skip-magic-trailing-comma = false
 line-ending = "auto"
 docstring-code-format = false
 docstring-code-line-length = "dynamic"
+
+[tool.uv]
+default-groups = ["dev", "main"]
