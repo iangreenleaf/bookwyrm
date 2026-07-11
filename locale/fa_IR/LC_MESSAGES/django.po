@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bookwyrm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-06 17:47+0000\n"
-"PO-Revision-Date: 2026-04-16 10:53\n"
+"POT-Creation-Date: 2026-07-06 15:05+0000\n"
+"PO-Revision-Date: 2026-07-06 20:04\n"
 "Last-Translator: Mouse Reeve <mousereeve@riseup.net>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -37,31 +37,44 @@ msgstr "منقضی نمی‌شود"
 msgid "Unlimited"
 msgstr "نامحدود"
 
-#: bookwyrm/forms/edit_user.py:100 bookwyrm/views/landing/password.py:117
+#: bookwyrm/forms/edit_user.py:15
+msgid "Readwise access token"
+msgstr ""
+
+#: bookwyrm/forms/edit_user.py:24
+#: bookwyrm/templates/preferences/edit_user.html:173
+msgid "Remove saved Readwise access token"
+msgstr ""
+
+#: bookwyrm/forms/edit_user.py:64
+msgid "A Readwise access token is saved. Leave this blank to keep it."
+msgstr ""
+
+#: bookwyrm/forms/edit_user.py:136 bookwyrm/views/landing/password.py:117
 msgid "Incorrect password"
 msgstr "رمز عبور نادرست است"
 
-#: bookwyrm/forms/edit_user.py:107 bookwyrm/forms/landing.py:93
+#: bookwyrm/forms/edit_user.py:143 bookwyrm/forms/landing.py:93
 msgid "Password does not match"
 msgstr "گذرواژه مطابقت ندارد"
 
-#: bookwyrm/forms/edit_user.py:130
+#: bookwyrm/forms/edit_user.py:166
 msgid "Incorrect Password"
 msgstr "گذرواژه اشتباه است"
 
-#: bookwyrm/forms/forms.py:60
+#: bookwyrm/forms/forms.py:67
 msgid "Reading finish date cannot be before start date."
 msgstr "تاریخ اتمام مطالعه نمی‌تواند قبل از تاریخ شروع باشد."
 
-#: bookwyrm/forms/forms.py:65
+#: bookwyrm/forms/forms.py:72
 msgid "Reading stopped date cannot be before start date."
 msgstr "تاریخ توقف مطالعه نمی‌تواند قبل از تاریخ شروع باشد."
 
-#: bookwyrm/forms/forms.py:73
+#: bookwyrm/forms/forms.py:80
 msgid "Reading stopped date cannot be in the future."
 msgstr "تاریخ توقف مطالعه نمی‌تواند در آینده باشد."
 
-#: bookwyrm/forms/forms.py:80
+#: bookwyrm/forms/forms.py:87
 msgid "Reading finished date cannot be in the future."
 msgstr "تاریخ اتمام مطالعه نمی‌تواند در آینده باشد."
 
@@ -97,29 +110,29 @@ msgstr "این دامنه مسدود است. لطفاً اگر فکر می‌ک�
 msgid "This link has already been added for this book. If it is not visible, the domain is still pending."
 msgstr "این لینک قبلاً برای این کتاب اضافه شده است. اگر قابل مشاهده نیست، دامنه هنوز در انتظار است."
 
-#: bookwyrm/forms/lists.py:26
+#: bookwyrm/forms/lists.py:38
 msgid "List Order"
 msgstr "ترتیب لیست"
 
-#: bookwyrm/forms/lists.py:27
+#: bookwyrm/forms/lists.py:39
 msgid "Book Title"
 msgstr "عنوان کتاب"
 
-#: bookwyrm/forms/lists.py:28 bookwyrm/templates/shelf/shelf.html:164
+#: bookwyrm/forms/lists.py:40 bookwyrm/templates/shelf/shelf.html:164
 #: bookwyrm/templates/shelf/shelf.html:196
-#: bookwyrm/templates/snippets/create_status/review.html:32
+#: bookwyrm/templates/snippets/create_status/review.html:31
 msgid "Rating"
 msgstr "امتیاز"
 
-#: bookwyrm/forms/lists.py:30 bookwyrm/templates/lists/list.html:185
+#: bookwyrm/forms/lists.py:42 bookwyrm/templates/lists/list.html:71
 msgid "Sort By"
 msgstr "مرتب‌سازی بر اساس"
 
-#: bookwyrm/forms/lists.py:34
+#: bookwyrm/forms/lists.py:46
 msgid "Ascending"
 msgstr "صعودی"
 
-#: bookwyrm/forms/lists.py:35
+#: bookwyrm/forms/lists.py:47
 msgid "Descending"
 msgstr "نزولی"
 
@@ -144,7 +157,7 @@ msgstr "هشدار"
 msgid "Danger"
 msgstr "خطر"
 
-#: bookwyrm/models/antispam.py:114 bookwyrm/models/antispam.py:148
+#: bookwyrm/models/antispam.py:114 bookwyrm/models/antispam.py:149
 msgid "Automatically generated report"
 msgstr "گزارش به طور خودکار تولید شده"
 
@@ -175,41 +188,45 @@ msgstr "حذف مدیر"
 msgid "Domain block"
 msgstr "مسدود کردن دامنه"
 
-#: bookwyrm/models/book.py:500
+#: bookwyrm/models/book.py:532
 msgid "Audiobook"
 msgstr "کتاب صوتی"
 
-#: bookwyrm/models/book.py:501
+#: bookwyrm/models/book.py:533
 msgid "eBook"
 msgstr "کتاب الکترونیکی"
 
-#: bookwyrm/models/book.py:502
+#: bookwyrm/models/book.py:534
 msgid "Graphic novel"
 msgstr "رمان گرافیکی"
 
-#: bookwyrm/models/book.py:503
+#: bookwyrm/models/book.py:535
 msgid "Hardcover"
 msgstr "کتاب جلد سخت"
 
-#: bookwyrm/models/book.py:504
+#: bookwyrm/models/book.py:536
 msgid "Paperback"
 msgstr "کتاب جلد نرم"
 
-#: bookwyrm/models/book.py:513 bookwyrm/models/book.py:520
-#: bookwyrm/models/book.py:526 bookwyrm/models/book.py:531
-#: bookwyrm/models/book.py:536 bookwyrm/models/book.py:554
-#: bookwyrm/models/book.py:560 bookwyrm/models/book.py:565
+#: bookwyrm/models/book.py:545 bookwyrm/models/book.py:552
+#: bookwyrm/models/book.py:558 bookwyrm/models/book.py:563
+#: bookwyrm/models/book.py:568 bookwyrm/models/book.py:586
+#: bookwyrm/models/book.py:592 bookwyrm/models/book.py:597
 #, python-format
 msgid "%(value)s doesn't look like an ISBN"
 msgstr "%(value)s به نظر نمی‌رسد یک ISBN باشد"
 
-#: bookwyrm/models/book.py:542 bookwyrm/models/book.py:582
+#: bookwyrm/models/book.py:574 bookwyrm/models/book.py:614
 #, python-format
 msgid "%(value)s doesn't have correct ISBN checksum, we expected %(check_version)s"
 msgstr "%(value)s دارای چک‌کد ISBN صحیح نیست، ما انتظار داشتیم %(check_version)s"
 
-#: bookwyrm/models/bookwyrm_import_job.py:151 bookwyrm/models/report.py:85
-#: bookwyrm/templates/settings/reports/report.html:115
+#: bookwyrm/models/book.py:797
+msgid "Book is already in this series"
+msgstr ""
+
+#: bookwyrm/models/bookwyrm_import_job.py:151 bookwyrm/models/report.py:119
+#: bookwyrm/templates/settings/reports/report.html:119
 #: bookwyrm/templates/snippets/create_status.html:26
 msgid "Comment"
 msgstr "نظر"
@@ -233,6 +250,7 @@ msgstr "دنبال کردن"
 #: bookwyrm/models/bookwyrm_import_job.py:182
 #: bookwyrm/templates/settings/federation/instance.html:116
 #: bookwyrm/templates/settings/link_domains/link_domains.html:87
+#: bookwyrm/templates/snippets/block_book_button.html:5
 #: bookwyrm/templates/snippets/block_button.html:5
 msgid "Block"
 msgstr "مسدود کردن"
@@ -338,7 +356,7 @@ msgid "Wrong Path"
 msgstr "مسیر نادرست"
 
 #: bookwyrm/models/import_job.py:51 bookwyrm/models/job.py:19
-#: bookwyrm/templates/import/import.html:184
+#: bookwyrm/templates/import/import.html:203
 #: bookwyrm/templates/import/import_user.html:225
 #: bookwyrm/templates/import/user_import_status.html:56
 #: bookwyrm/templates/preferences/export-user.html:146
@@ -351,7 +369,7 @@ msgid "Active"
 msgstr "فعال"
 
 #: bookwyrm/models/import_job.py:52 bookwyrm/models/job.py:20
-#: bookwyrm/templates/import/import.html:182
+#: bookwyrm/templates/import/import.html:201
 #: bookwyrm/templates/import/import_user.html:223
 #: bookwyrm/templates/import/user_import_status.html:54
 #: bookwyrm/templates/preferences/export-user.html:144
@@ -398,47 +416,57 @@ msgstr "برای امانت در دسترس"
 msgid "Approved"
 msgstr "تأیید شده"
 
-#: bookwyrm/models/report.py:86
+#: bookwyrm/models/list.py:106
+#, python-format
+msgid "Suggestions for %(title)s"
+msgstr ""
+
+#: bookwyrm/models/list.py:112
+#, python-format
+msgid "This is the list of suggestions for <a href='%(url)s'>%(title)s</a>"
+msgstr ""
+
+#: bookwyrm/models/report.py:120
 msgid "Resolved report"
 msgstr "گزارش حل شده"
 
-#: bookwyrm/models/report.py:87
+#: bookwyrm/models/report.py:121
 msgid "Re-opened report"
 msgstr "گزارش دوباره باز شده"
 
-#: bookwyrm/models/report.py:88
+#: bookwyrm/models/report.py:122
 msgid "Messaged reporter"
 msgstr "گزارش دهنده پیام داد"
 
-#: bookwyrm/models/report.py:89
+#: bookwyrm/models/report.py:123
 msgid "Messaged reported user"
 msgstr "کاربر گزارش شده پیام داد"
 
-#: bookwyrm/models/report.py:90
+#: bookwyrm/models/report.py:124
 msgid "Suspended user"
 msgstr "کاربر تعلیق شده"
 
-#: bookwyrm/models/report.py:91
+#: bookwyrm/models/report.py:125
 msgid "Un-suspended user"
 msgstr "کاربر رفع تعلیق شده"
 
-#: bookwyrm/models/report.py:92
+#: bookwyrm/models/report.py:126
 msgid "Changed user permission level"
 msgstr "سطح دسترسی کاربر تغییر کرد"
 
-#: bookwyrm/models/report.py:93
+#: bookwyrm/models/report.py:127
 msgid "Deleted user account"
 msgstr "حساب کاربری کاربر حذف شد"
 
-#: bookwyrm/models/report.py:94
+#: bookwyrm/models/report.py:128
 msgid "Blocked domain"
 msgstr "دامنه مسدود شده"
 
-#: bookwyrm/models/report.py:95
+#: bookwyrm/models/report.py:129
 msgid "Approved domain"
 msgstr "دامنه تأیید شده"
 
-#: bookwyrm/models/report.py:96
+#: bookwyrm/models/report.py:130
 msgid "Deleted item"
 msgstr "موارد حذف شده"
 
@@ -451,29 +479,29 @@ msgstr "نا شناخته شده"
 msgid "%(display_name)s's status"
 msgstr "%(display_name)s's وضعیت"
 
-#: bookwyrm/models/status.py:365
+#: bookwyrm/models/status.py:395
 #, python-format
 msgid "%(display_name)s's comment on %(book_title)s"
 msgstr "%(display_name)s's نظر در مورد %(book_title)s"
 
-#: bookwyrm/models/status.py:416
+#: bookwyrm/models/status.py:446
 #, python-format
 msgid "%(display_name)s's quote from %(book_title)s"
 msgstr "%(display_name)s's نقل قول از %(book_title)s"
 
-#: bookwyrm/models/status.py:452
+#: bookwyrm/models/status.py:486
 #, python-format
 msgid "%(display_name)s's review of %(book_title)s"
 msgstr "%(display_name)s's بررسی %(book_title)s"
 
-#: bookwyrm/models/status.py:484
+#: bookwyrm/models/status.py:518
 #, python-format
 msgid "%(display_name)s rated %(book_title)s: %(display_rating).1f star"
 msgid_plural "%(display_name)s rated %(book_title)s: %(display_rating).1f stars"
 msgstr[0] "%(display_name)s به %(book_title)s نمره داد: %(display_rating).1f ستاره"
 msgstr[1] "%(display_name)s به %(book_title)s نمره داد: %(display_rating).1f ستاره"
 
-#: bookwyrm/models/user.py:40 bookwyrm/templates/book/book.html:343
+#: bookwyrm/models/user.py:40 bookwyrm/templates/book/book.html:359
 msgid "Reviews"
 msgstr "بررسی‌ها"
 
@@ -489,112 +517,117 @@ msgstr "نقل قول‌ها"
 msgid "Everything else"
 msgstr "سایر موارد"
 
-#: bookwyrm/settings.py:236
+#: bookwyrm/models/user.py:232
+#, python-brace-format
+msgid "avatar for {name}"
+msgstr ""
+
+#: bookwyrm/settings.py:258
 msgid "Home Timeline"
 msgstr "خط زمانی خانه"
 
-#: bookwyrm/settings.py:236
+#: bookwyrm/settings.py:258
 msgid "Home"
 msgstr "خانه"
 
-#: bookwyrm/settings.py:237
+#: bookwyrm/settings.py:259
 msgid "Books Timeline"
 msgstr "خط زمانی کتاب‌ها"
 
-#: bookwyrm/settings.py:237
+#: bookwyrm/settings.py:259
 #: bookwyrm/templates/guided_tour/user_profile.html:101
 #: bookwyrm/templates/import/user_import_status.html:73
 #: bookwyrm/templates/search/layout.html:22
 #: bookwyrm/templates/search/layout.html:44
-#: bookwyrm/templates/user/layout.html:107
+#: bookwyrm/templates/user/layout.html:117
 msgid "Books"
 msgstr "کتاب‌ها"
 
-#: bookwyrm/settings.py:316
+#: bookwyrm/settings.py:338
 msgid "English"
 msgstr "انگلیسی"
 
-#: bookwyrm/settings.py:317
+#: bookwyrm/settings.py:339
 msgid "Català (Catalan)"
 msgstr "کاتالان (Catalan)"
 
-#: bookwyrm/settings.py:318
+#: bookwyrm/settings.py:340
 msgid "Deutsch (German)"
 msgstr "آلمانی (German)"
 
-#: bookwyrm/settings.py:319
+#: bookwyrm/settings.py:341
 msgid "Esperanto (Esperanto)"
 msgstr "اسپرانتو (Esperanto)"
 
-#: bookwyrm/settings.py:320
+#: bookwyrm/settings.py:342
 msgid "Español (Spanish)"
 msgstr "اسپانیایی (Spanish)"
 
-#: bookwyrm/settings.py:321
+#: bookwyrm/settings.py:343
 msgid "Euskara (Basque)"
 msgstr "باسکی (Basque)"
 
-#: bookwyrm/settings.py:322
+#: bookwyrm/settings.py:344
 msgid "Galego (Galician)"
 msgstr "گالیسی (Galician)"
 
-#: bookwyrm/settings.py:323
+#: bookwyrm/settings.py:345
 msgid "Italiano (Italian)"
 msgstr "ایتالیایی (Italian)"
 
-#: bookwyrm/settings.py:324
+#: bookwyrm/settings.py:346
 msgid "한국어 (Korean)"
 msgstr "کره‌ای (Korean)"
 
-#: bookwyrm/settings.py:325
+#: bookwyrm/settings.py:347
 msgid "Suomi (Finnish)"
 msgstr "فنلاندی (Finnish)"
 
-#: bookwyrm/settings.py:326
+#: bookwyrm/settings.py:348
 msgid "Français (French)"
 msgstr "فرانسوی (French)"
 
-#: bookwyrm/settings.py:327
+#: bookwyrm/settings.py:349
 msgid "Lietuvių (Lithuanian)"
 msgstr "لیتوانیایی (Lithuanian)"
 
-#: bookwyrm/settings.py:328
+#: bookwyrm/settings.py:350
 msgid "Nederlands (Dutch)"
 msgstr "هلندی (Dutch)"
 
-#: bookwyrm/settings.py:329
+#: bookwyrm/settings.py:351
 msgid "Norsk (Norwegian)"
 msgstr "نروژی (Norwegian)"
 
-#: bookwyrm/settings.py:330
+#: bookwyrm/settings.py:352
 msgid "Polski (Polish)"
 msgstr "لهستانی (Polish)"
 
-#: bookwyrm/settings.py:331
+#: bookwyrm/settings.py:353
 msgid "Português do Brasil (Brazilian Portuguese)"
 msgstr "پرتغالی برزیلی (Brazilian Portuguese)"
 
-#: bookwyrm/settings.py:332
+#: bookwyrm/settings.py:354
 msgid "Português Europeu (European Portuguese)"
 msgstr "پرتغالی اروپایی (Português Europeu)"
 
-#: bookwyrm/settings.py:333
+#: bookwyrm/settings.py:355
 msgid "Română (Romanian)"
 msgstr "رومانیایی (Română)"
 
-#: bookwyrm/settings.py:334
+#: bookwyrm/settings.py:356
 msgid "Svenska (Swedish)"
 msgstr "سوئدی (Svenska)"
 
-#: bookwyrm/settings.py:335
+#: bookwyrm/settings.py:357
 msgid "Українська (Ukrainian)"
 msgstr "اوکراینی (Українська)"
 
-#: bookwyrm/settings.py:336
+#: bookwyrm/settings.py:358
 msgid "简体中文 (Simplified Chinese)"
 msgstr "چینی ساده (简体中文)"
 
-#: bookwyrm/settings.py:337
+#: bookwyrm/settings.py:359
 msgid "繁體中文 (Traditional Chinese)"
 msgstr "چینی سنتی (繁體中文)"
 
@@ -772,7 +805,7 @@ msgid "Copy address"
 msgstr "آدرس را کپی کنید"
 
 #: bookwyrm/templates/annual_summary/layout.html:68
-#: bookwyrm/templates/lists/list.html:277
+#: bookwyrm/templates/lists/list.html:112
 msgid "Copied!"
 msgstr "کپی شد!"
 
@@ -839,10 +872,9 @@ msgstr "کوتاه‌ترین خواندن آن‌ها در این سال…"
 #: bookwyrm/templates/annual_summary/layout.html:157
 #: bookwyrm/templates/annual_summary/layout.html:178
 #: bookwyrm/templates/annual_summary/layout.html:247
-#: bookwyrm/templates/book/book.html:73
+#: bookwyrm/templates/book/book.html:89 bookwyrm/templates/book/series.html:21
 #: bookwyrm/templates/discover/large-book.html:22
-#: bookwyrm/templates/landing/large-book.html:26
-#: bookwyrm/templates/landing/small-book.html:18
+#: bookwyrm/templates/snippets/small-book.html:18
 msgid "by"
 msgstr "توسط"
 
@@ -888,79 +920,84 @@ msgstr "امتیاز آن‌ها: <strong>%(rating)s</strong>"
 msgid "All the books %(display_name)s read in %(year)s"
 msgstr "همه کتاب‌هایی که %(display_name)s در %(year)s خوانده است"
 
-#: bookwyrm/templates/author/author.html:19
 #: bookwyrm/templates/author/author.html:20
+#: bookwyrm/templates/author/author.html:21
 msgid "Edit Author"
 msgstr "ویرایش نویسنده"
 
-#: bookwyrm/templates/author/author.html:36
+#: bookwyrm/templates/author/author.html:37
 msgid "Author details"
 msgstr "جزئیات نویسنده"
 
-#: bookwyrm/templates/author/author.html:40
+#: bookwyrm/templates/author/author.html:41
 #: bookwyrm/templates/author/edit_author.html:42
 msgid "Aliases:"
 msgstr "نام‌های مستعار:"
 
-#: bookwyrm/templates/author/author.html:49
+#: bookwyrm/templates/author/author.html:51
 msgid "Born:"
 msgstr "تولد:"
 
-#: bookwyrm/templates/author/author.html:56
+#: bookwyrm/templates/author/author.html:60
 msgid "Died:"
 msgstr "مرگ:"
 
-#: bookwyrm/templates/author/author.html:66
+#: bookwyrm/templates/author/author.html:68
+msgid "Series:"
+msgstr "سری:"
+
+#: bookwyrm/templates/author/author.html:83
+#: bookwyrm/templates/book/series.html:41
 msgid "External links"
 msgstr "لینک‌های خارجی"
 
-#: bookwyrm/templates/author/author.html:71
+#: bookwyrm/templates/author/author.html:88
 msgid "Wikipedia"
 msgstr "ویکی‌پدیا"
 
-#: bookwyrm/templates/author/author.html:79
+#: bookwyrm/templates/author/author.html:96
 msgid "View on Wikidata"
 msgstr "مشاهده در ویکی‌داده"
 
-#: bookwyrm/templates/author/author.html:87
+#: bookwyrm/templates/author/author.html:104
 msgid "Website"
 msgstr "وب‌سایت"
 
-#: bookwyrm/templates/author/author.html:95
+#: bookwyrm/templates/author/author.html:112
 msgid "View ISNI record"
 msgstr "مشاهده رکورد ISNI"
 
-#: bookwyrm/templates/author/author.html:103
-#: bookwyrm/templates/book/book.html:183
+#: bookwyrm/templates/author/author.html:120
+#: bookwyrm/templates/book/book.html:199
 msgid "View on ISFDB"
 msgstr "مشاهده در ISFDB"
 
-#: bookwyrm/templates/author/author.html:108
+#: bookwyrm/templates/author/author.html:125
 #: bookwyrm/templates/author/sync_modal.html:5
-#: bookwyrm/templates/book/book.html:150
+#: bookwyrm/templates/book/book.html:166
 #: bookwyrm/templates/book/sync_modal.html:5
 msgid "Load data"
 msgstr "بارگذاری داده"
 
-#: bookwyrm/templates/author/author.html:112
-#: bookwyrm/templates/book/book.html:154
+#: bookwyrm/templates/author/author.html:129
+#: bookwyrm/templates/book/book.html:170
 msgid "View on OpenLibrary"
 msgstr "مشاهده در OpenLibrary"
 
-#: bookwyrm/templates/author/author.html:127
-#: bookwyrm/templates/book/book.html:168
+#: bookwyrm/templates/author/author.html:144
+#: bookwyrm/templates/book/book.html:184
 msgid "View on Inventaire"
 msgstr "مشاهده در Inventaire"
 
-#: bookwyrm/templates/author/author.html:143
+#: bookwyrm/templates/author/author.html:160
 msgid "View on LibraryThing"
 msgstr "مشاهده در LibraryThing"
 
-#: bookwyrm/templates/author/author.html:151
+#: bookwyrm/templates/author/author.html:168
 msgid "View on Goodreads"
 msgstr "مشاهده در Goodreads"
 
-#: bookwyrm/templates/author/author.html:166
+#: bookwyrm/templates/author/author.html:183
 #, python-format
 msgid "Books by %(name)s"
 msgstr "کتاب‌های %(name)s"
@@ -997,8 +1034,8 @@ msgid "Name:"
 msgstr "نام:"
 
 #: bookwyrm/templates/author/edit_author.html:44
-#: bookwyrm/templates/book/edit/edit_book_form.html:91
-#: bookwyrm/templates/book/edit/edit_book_form.html:161
+#: bookwyrm/templates/book/edit/edit_book_form.html:68
+#: bookwyrm/templates/book/edit/edit_book_form.html:211
 msgid "Separate multiple values with commas."
 msgstr "برای جدا کردن مقادیر چندگانه از ویرگول استفاده کنید."
 
@@ -1035,7 +1072,8 @@ msgid "Openlibrary key:"
 msgstr "کلید اوپن‌لایبرری:"
 
 #: bookwyrm/templates/author/edit_author.html:90
-#: bookwyrm/templates/book/edit/edit_book_form.html:336
+#: bookwyrm/templates/book/edit/edit_book_form.html:386
+#: bookwyrm/templates/book/edit/edit_series.html:54
 msgid "Inventaire ID:"
 msgstr "شناسه اینونر:"
 
@@ -1044,7 +1082,7 @@ msgid "Librarything key:"
 msgstr "کلید لایبرری‌تینک:"
 
 #: bookwyrm/templates/author/edit_author.html:104
-#: bookwyrm/templates/book/edit/edit_book_form.html:345
+#: bookwyrm/templates/book/edit/edit_book_form.html:395
 msgid "Goodreads key:"
 msgstr "کلید گودریڊز:"
 
@@ -1057,20 +1095,20 @@ msgid "ISNI:"
 msgstr ""
 
 #: bookwyrm/templates/author/edit_author.html:128
-#: bookwyrm/templates/book/book.html:256
-#: bookwyrm/templates/book/edit/edit_book.html:150
+#: bookwyrm/templates/book/book.html:272
+#: bookwyrm/templates/book/edit/edit_book.html:186
 #: bookwyrm/templates/book/file_links/add_link_modal.html:60
 #: bookwyrm/templates/book/file_links/edit_links.html:86
 #: bookwyrm/templates/groups/form.html:32
 #: bookwyrm/templates/lists/bookmark_button.html:15
-#: bookwyrm/templates/lists/edit_item_form.html:15
+#: bookwyrm/templates/lists/edit_item_form.html:16
 #: bookwyrm/templates/lists/form.html:130
-#: bookwyrm/templates/preferences/edit_user.html:146
+#: bookwyrm/templates/preferences/edit_user.html:179
 #: bookwyrm/templates/readthrough/readthrough_modal.html:81
 #: bookwyrm/templates/settings/announcements/edit_announcement.html:120
 #: bookwyrm/templates/settings/federation/edit_instance.html:98
 #: bookwyrm/templates/settings/federation/instance.html:105
-#: bookwyrm/templates/settings/federation/settings.html:45
+#: bookwyrm/templates/settings/federation/settings.html:78
 #: bookwyrm/templates/settings/registration.html:96
 #: bookwyrm/templates/settings/registration_limited.html:76
 #: bookwyrm/templates/settings/site.html:144
@@ -1082,27 +1120,27 @@ msgstr "ذخیره"
 
 #: bookwyrm/templates/author/edit_author.html:129
 #: bookwyrm/templates/author/sync_modal.html:23
-#: bookwyrm/templates/book/book.html:257
+#: bookwyrm/templates/book/book.html:273
 #: bookwyrm/templates/book/cover_add_modal.html:33
-#: bookwyrm/templates/book/edit/edit_book.html:152
-#: bookwyrm/templates/book/edit/edit_book.html:155
+#: bookwyrm/templates/book/edit/edit_book.html:188
+#: bookwyrm/templates/book/edit/edit_book.html:191
 #: bookwyrm/templates/book/file_links/add_link_modal.html:59
 #: bookwyrm/templates/book/file_links/verification_modal.html:26
 #: bookwyrm/templates/book/sync_modal.html:23
 #: bookwyrm/templates/groups/delete_group_modal.html:15
-#: bookwyrm/templates/lists/add_item_modal.html:36
+#: bookwyrm/templates/lists/add_item_modal.html:41
 #: bookwyrm/templates/lists/delete_list_modal.html:16
 #: bookwyrm/templates/preferences/disable-2fa.html:19
 #: bookwyrm/templates/readthrough/delete_readthrough_modal.html:27
 #: bookwyrm/templates/readthrough/readthrough_modal.html:80
-#: bookwyrm/templates/search/barcode_modal.html:43
+#: bookwyrm/templates/search/barcode_modal.html:41
 #: bookwyrm/templates/settings/federation/instance.html:106
 #: bookwyrm/templates/settings/files.html:193
 #: bookwyrm/templates/settings/files.html:354
 #: bookwyrm/templates/settings/imports/complete_import_modal.html:16
 #: bookwyrm/templates/settings/imports/complete_user_import_modal.html:16
 #: bookwyrm/templates/settings/link_domains/edit_domain_modal.html:22
-#: bookwyrm/templates/snippets/report_modal.html:52
+#: bookwyrm/templates/snippets/report_modal.html:60
 msgid "Cancel"
 msgstr "انصراف"
 
@@ -1112,7 +1150,8 @@ msgid "Loading data will connect to <strong>%(source_name)s</strong> and check f
 msgstr "بارگذاری داده‌ها به <strong>%(source_name)s</strong> متصل خواهد شد و هر گونه متاداده درباره این نویسنده که در اینجا موجود نیست را بررسی خواهد کرد. متاداده‌های موجود جایگزین نخواهند شد."
 
 #: bookwyrm/templates/author/sync_modal.html:24
-#: bookwyrm/templates/book/edit/edit_book.html:137
+#: bookwyrm/templates/book/edit/edit_book.html:173
+#: bookwyrm/templates/book/edit/edit_series.html:84
 #: bookwyrm/templates/book/sync_modal.html:24
 #: bookwyrm/templates/groups/members.html:29
 #: bookwyrm/templates/landing/force_password_reset.html:94
@@ -1129,123 +1168,142 @@ msgstr "تأیید"
 msgid "Unable to connect to remote source."
 msgstr "عدم توانایی در اتصال به منبع از راه دور."
 
-#: bookwyrm/templates/book/book.html:81 bookwyrm/templates/book/book.html:82
+#: bookwyrm/templates/book/book.html:52
+#, python-format
+msgid "This book might be part of the <em>%(series)s</em> series."
+msgstr ""
+
+#: bookwyrm/templates/book/book.html:56
+msgid "Edit it to confirm."
+msgstr ""
+
+#: bookwyrm/templates/book/book.html:69
+#, python-format
+msgid "Book <span itemprop=\"position\">%(number)s</span> in <em><a href=\"%(path)s\">%(title)s</a></em>"
+msgstr ""
+
+#: bookwyrm/templates/book/book.html:75
+#, python-format
+msgid "Part of <em><a href=\"%(path)s\">%(title)s</a></em>"
+msgstr ""
+
+#: bookwyrm/templates/book/book.html:97 bookwyrm/templates/book/book.html:98
 msgid "Edit Book"
 msgstr "ویرایش کتاب"
 
-#: bookwyrm/templates/book/book.html:107 bookwyrm/templates/book/book.html:110
+#: bookwyrm/templates/book/book.html:123 bookwyrm/templates/book/book.html:126
 msgid "Click to add cover"
 msgstr "برای افزودن جلد کلیک کنید"
 
-#: bookwyrm/templates/book/book.html:116
+#: bookwyrm/templates/book/book.html:132
 msgid "Failed to load cover"
 msgstr "بارگذاری جلد ناموفق بود"
 
-#: bookwyrm/templates/book/book.html:127
+#: bookwyrm/templates/book/book.html:143
 msgid "Click to enlarge"
 msgstr "برای بزرگ‌نمایی کلیک کنید"
 
-#: bookwyrm/templates/book/book.html:190
+#: bookwyrm/templates/book/book.html:206
 msgid "View on Finna"
 msgstr "مشاهده در فینا"
 
-#: bookwyrm/templates/book/book.html:205
+#: bookwyrm/templates/book/book.html:221
 msgid "View on Libris"
 msgstr "مشاهده در لایبریس"
 
-#: bookwyrm/templates/book/book.html:229
+#: bookwyrm/templates/book/book.html:245
 #, python-format
 msgid "(%(review_count)s review)"
 msgid_plural "(%(review_count)s reviews)"
 msgstr[0] "(%(review_count)s نقد)"
 msgstr[1] "(%(review_count)s نقدها)"
 
-#: bookwyrm/templates/book/book.html:245
+#: bookwyrm/templates/book/book.html:261
 msgid "Add Description"
 msgstr "افزودن توضیحات"
 
-#: bookwyrm/templates/book/book.html:252
+#: bookwyrm/templates/book/book.html:268
 #: bookwyrm/templates/book/edit/edit_book_form.html:55
 #: bookwyrm/templates/lists/form.html:13 bookwyrm/templates/shelf/form.html:17
 msgid "Description:"
 msgstr "توضیحات:"
 
-#: bookwyrm/templates/book/book.html:268
+#: bookwyrm/templates/book/book.html:284
 #, python-format
 msgid "%(count)s edition"
 msgid_plural "%(count)s editions"
 msgstr[0] "%(count)s ویرایش"
 msgstr[1] "%(count)s ویرایش‌ها"
 
-#: bookwyrm/templates/book/book.html:282
+#: bookwyrm/templates/book/book.html:298
 msgid "You have shelved this edition in:"
 msgstr "شما این ویرایش را در قفسه‌تان قرار داده‌اید:"
 
-#: bookwyrm/templates/book/book.html:297
+#: bookwyrm/templates/book/book.html:313
 #, python-format
 msgid "A <a href=\"%(book_path)s\">different edition</a> of this book is on your <a href=\"%(shelf_path)s\">%(shelf_name)s</a> shelf."
 msgstr "یک <a href=\"%(book_path)s\">ویرایش متفاوت</a> از این کتاب در قفسه <a href=\"%(shelf_path)s\">%(shelf_name)s</a> شما وجود دارد."
 
-#: bookwyrm/templates/book/book.html:308
+#: bookwyrm/templates/book/book.html:324
 msgid "Your reading activity"
 msgstr "فعالیت خواندن شما"
 
-#: bookwyrm/templates/book/book.html:314
+#: bookwyrm/templates/book/book.html:330
 #: bookwyrm/templates/guided_tour/book.html:56
 msgid "Add read dates"
 msgstr "تاریخ‌های خواندن را اضافه کنید"
 
-#: bookwyrm/templates/book/book.html:322
+#: bookwyrm/templates/book/book.html:338
 msgid "You don't have any reading activity for this book."
 msgstr "شما هیچ فعالیت خواندنی برای این کتاب ندارید."
 
-#: bookwyrm/templates/book/book.html:348
+#: bookwyrm/templates/book/book.html:364
 msgid "Your reviews"
 msgstr "نقدهای شما"
 
-#: bookwyrm/templates/book/book.html:354
+#: bookwyrm/templates/book/book.html:370
 msgid "Your comments"
 msgstr "نظرات شما"
 
-#: bookwyrm/templates/book/book.html:360
+#: bookwyrm/templates/book/book.html:376
 msgid "Your quotes"
 msgstr "نقل‌قول‌های شما"
 
-#: bookwyrm/templates/book/book.html:396
+#: bookwyrm/templates/book/book.html:412
 msgid "Subjects"
 msgstr "موضوعات"
 
-#: bookwyrm/templates/book/book.html:408
+#: bookwyrm/templates/book/book.html:424
 msgid "Places"
 msgstr "مکان‌ها"
 
-#: bookwyrm/templates/book/book.html:419
+#: bookwyrm/templates/book/book.html:435
 #: bookwyrm/templates/groups/group.html:19
 #: bookwyrm/templates/guided_tour/lists.html:14
 #: bookwyrm/templates/guided_tour/user_books.html:102
 #: bookwyrm/templates/guided_tour/user_profile.html:78
 #: bookwyrm/templates/layout.html:88 bookwyrm/templates/lists/curate.html:8
-#: bookwyrm/templates/lists/list.html:12 bookwyrm/templates/lists/lists.html:5
+#: bookwyrm/templates/lists/list.html:9 bookwyrm/templates/lists/lists.html:5
 #: bookwyrm/templates/lists/lists.html:12
 #: bookwyrm/templates/search/layout.html:27
 #: bookwyrm/templates/search/layout.html:55
 #: bookwyrm/templates/settings/celery.html:77
-#: bookwyrm/templates/user/layout.html:101 bookwyrm/templates/user/lists.html:6
+#: bookwyrm/templates/user/layout.html:105 bookwyrm/templates/user/lists.html:6
 msgid "Lists"
 msgstr "فهرست‌ها"
 
-#: bookwyrm/templates/book/book.html:431
+#: bookwyrm/templates/book/book.html:447
 msgid "Add to list"
 msgstr "اضافه کردن به فهرست"
 
-#: bookwyrm/templates/book/book.html:438
+#: bookwyrm/templates/book/book.html:454
 msgid "Create new list..."
 msgstr "ایجاد فهرست جدید..."
 
-#: bookwyrm/templates/book/book.html:442
+#: bookwyrm/templates/book/book.html:458
 #: bookwyrm/templates/book/cover_add_modal.html:32
-#: bookwyrm/templates/lists/add_item_modal.html:39
-#: bookwyrm/templates/lists/list.html:255
+#: bookwyrm/templates/lists/add_item_modal.html:44
+#: bookwyrm/templates/lists/suggestion_search.html:52
 #: bookwyrm/templates/settings/email_blocklist/domain_form.html:24
 #: bookwyrm/templates/settings/ip_blocklist/ip_address_form.html:32
 msgid "Add"
@@ -1265,25 +1323,26 @@ msgid "Copied ISBN!"
 msgstr "ISBN کپی شد!"
 
 #: bookwyrm/templates/book/book_identifiers.html:23
-#: bookwyrm/templates/book/edit/edit_book_form.html:354
+#: bookwyrm/templates/book/edit/edit_book_form.html:404
 #: bookwyrm/templates/rss/edition.html:6
 msgid "OCLC Number:"
 msgstr "شماره OCLC:"
 
 #: bookwyrm/templates/book/book_identifiers.html:30
-#: bookwyrm/templates/book/edit/edit_book_form.html:363
+#: bookwyrm/templates/book/edit/edit_book_form.html:413
 #: bookwyrm/templates/rss/edition.html:7
 msgid "ASIN:"
 msgstr ""
 
 #: bookwyrm/templates/book/book_identifiers.html:37
-#: bookwyrm/templates/book/edit/edit_book_form.html:372
+#: bookwyrm/templates/book/edit/edit_book_form.html:422
 #: bookwyrm/templates/rss/edition.html:8
 msgid "Audible ASIN:"
 msgstr "ASIN شنیداری:"
 
 #: bookwyrm/templates/book/book_identifiers.html:44
-#: bookwyrm/templates/book/edit/edit_book_form.html:381
+#: bookwyrm/templates/book/edit/edit_book_form.html:431
+#: bookwyrm/templates/book/edit/edit_series.html:60
 #: bookwyrm/templates/rss/edition.html:9
 msgid "ISFDB ID:"
 msgstr "شناسه ISFDB:"
@@ -1294,12 +1353,12 @@ msgid "Goodreads:"
 msgstr ""
 
 #: bookwyrm/templates/book/book_identifiers.html:58
-#: bookwyrm/templates/book/edit/edit_book_form.html:390
+#: bookwyrm/templates/book/edit/edit_book_form.html:440
 msgid "Finna ID:"
 msgstr "شناسه Finna:"
 
 #: bookwyrm/templates/book/book_identifiers.html:65
-#: bookwyrm/templates/book/edit/edit_book_form.html:399
+#: bookwyrm/templates/book/edit/edit_book_form.html:449
 msgid "Libris ID:"
 msgstr "شناسه Libris:"
 
@@ -1308,12 +1367,12 @@ msgid "Add cover"
 msgstr "کاور را اضافه کنید"
 
 #: bookwyrm/templates/book/cover_add_modal.html:17
-#: bookwyrm/templates/book/edit/edit_book_form.html:246
+#: bookwyrm/templates/book/edit/edit_book_form.html:296
 msgid "Upload cover:"
 msgstr "بارگذاری کاور:"
 
 #: bookwyrm/templates/book/cover_add_modal.html:23
-#: bookwyrm/templates/book/edit/edit_book_form.html:252
+#: bookwyrm/templates/book/edit/edit_book_form.html:302
 msgid "Load cover from URL:"
 msgstr "بارگذاری کاور از URL:"
 
@@ -1378,15 +1437,32 @@ msgstr "این یک نویسنده جدید است"
 msgid "Creating a new author: %(name)s"
 msgstr "در حال ایجاد نویسنده جدید: %(name)s"
 
-#: bookwyrm/templates/book/edit/edit_book.html:122
+#: bookwyrm/templates/book/edit/edit_book.html:123
 msgid "Is this an edition of an existing work?"
 msgstr "آیا این نسخه‌ای از یک اثر موجود است؟"
 
-#: bookwyrm/templates/book/edit/edit_book.html:130
+#: bookwyrm/templates/book/edit/edit_book.html:131
 msgid "This is a new work"
 msgstr "این یک اثر جدید است"
 
-#: bookwyrm/templates/book/edit/edit_book.html:139
+#: bookwyrm/templates/book/edit/edit_book.html:142
+msgid "Are you sure this is a new series? The following series have similar names and a matching author."
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book.html:148
+msgid "Is this book part of one of these series?"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book.html:160
+msgid "This is a new series"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book.html:165
+msgid "Creating a new series"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book.html:175
+#: bookwyrm/templates/book/edit/edit_series.html:86
 #: bookwyrm/templates/feed/status.html:17
 #: bookwyrm/templates/guided_tour/book.html:44
 #: bookwyrm/templates/guided_tour/book.html:68
@@ -1431,7 +1507,7 @@ msgstr "این یک اثر جدید است"
 #: bookwyrm/templates/guided_tour/user_profile.html:89
 #: bookwyrm/templates/guided_tour/user_profile.html:112
 #: bookwyrm/templates/guided_tour/user_profile.html:135
-#: bookwyrm/templates/user/user.html:102 bookwyrm/templates/user_menu.html:18
+#: bookwyrm/templates/user/user.html:107 bookwyrm/templates/user_menu.html:18
 msgid "Back"
 msgstr "بازگشت"
 
@@ -1448,123 +1524,190 @@ msgstr "عنوان مرتب‌سازی:"
 msgid "Subtitle:"
 msgstr "زیرعنوان:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:66
-msgid "Series:"
-msgstr "سری:"
-
-#: bookwyrm/templates/book/edit/edit_book_form.html:76
-msgid "Series number:"
-msgstr "شماره سری:"
-
-#: bookwyrm/templates/book/edit/edit_book_form.html:87
+#: bookwyrm/templates/book/edit/edit_book_form.html:64
 msgid "Languages:"
 msgstr "زبان‌ها:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:99
+#: bookwyrm/templates/book/edit/edit_book_form.html:76
 msgid "Subjects:"
 msgstr "موضوعات:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:103
+#: bookwyrm/templates/book/edit/edit_book_form.html:80
 msgid "Add subject"
 msgstr "موضوع اضافه کنید"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:121
+#: bookwyrm/templates/book/edit/edit_book_form.html:98
 msgid "Remove subject"
 msgstr "موضوع را حذف کنید"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:144
+#: bookwyrm/templates/book/edit/edit_book_form.html:121
 msgid "Add Another Subject"
 msgstr "موضوع دیگری اضافه کنید"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:152
+#: bookwyrm/templates/book/edit/edit_book_form.html:130
+msgid "Series"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:138
+#: bookwyrm/templates/book/series.html:12
+#: bookwyrm/templates/book/series.html:13
+msgid "Edit Series"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:141
+msgid "To edit details of a series itself, click the series name"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:150
+#: bookwyrm/templates/snippets/create_status/quotation.html:31
+msgid "Position:"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:164
+#, python-format
+msgid "Remove this book from <em>%(series_name)s</em>"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:175
+msgid "Add Series"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:178
+msgid "Series name:"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:186
+#: bookwyrm/templates/book/edit/edit_series.html:75
+msgid "Series position:"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:189
+msgid "This field was previously called \"Series number\""
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_book_form.html:202
 msgid "Publication"
 msgstr "انتشار"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:157
+#: bookwyrm/templates/book/edit/edit_book_form.html:207
 msgid "Publisher:"
 msgstr "ناشر:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:169
+#: bookwyrm/templates/book/edit/edit_book_form.html:219
 msgid "First published date:"
 msgstr "تاریخ اولین انتشار:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:177
+#: bookwyrm/templates/book/edit/edit_book_form.html:227
 msgid "Published date:"
 msgstr "تاریخ انتشار:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:188
+#: bookwyrm/templates/book/edit/edit_book_form.html:238
 #: bookwyrm/templates/import/user_import_status.html:155
+#: bookwyrm/templates/preferences/books.html:17
 #: bookwyrm/templates/search/layout.html:23
 #: bookwyrm/templates/search/layout.html:47
 msgid "Authors"
 msgstr "نویسندگان"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:199
+#: bookwyrm/templates/book/edit/edit_book_form.html:249
 #, python-format
 msgid "Remove %(name)s"
 msgstr "حذف %(name)s"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:202
+#: bookwyrm/templates/book/edit/edit_book_form.html:252
 #, python-format
 msgid "Author page for %(name)s"
 msgstr "صفحه نویسنده برای %(name)s"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:210
+#: bookwyrm/templates/book/edit/edit_book_form.html:260
 msgid "Add Authors:"
 msgstr "نویسندگان را اضافه کنید:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:213
-#: bookwyrm/templates/book/edit/edit_book_form.html:216
+#: bookwyrm/templates/book/edit/edit_book_form.html:263
+#: bookwyrm/templates/book/edit/edit_book_form.html:266
 msgid "Add Author"
 msgstr "نویسنده اضافه کنید"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:214
-#: bookwyrm/templates/book/edit/edit_book_form.html:217
+#: bookwyrm/templates/book/edit/edit_book_form.html:264
+#: bookwyrm/templates/book/edit/edit_book_form.html:267
 msgid "Jane Doe"
 msgstr "جین دو"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:223
+#: bookwyrm/templates/book/edit/edit_book_form.html:273
 msgid "Add Another Author"
 msgstr "نویسنده دیگری اضافه کنید"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:233
+#: bookwyrm/templates/book/edit/edit_book_form.html:283
 #: bookwyrm/templates/shelf/shelf.html:155
 msgid "Cover"
 msgstr "پوشش"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:265
+#: bookwyrm/templates/book/edit/edit_book_form.html:315
 msgid "Physical Properties"
 msgstr "ویژگی‌های فیزیکی"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:272
+#: bookwyrm/templates/book/edit/edit_book_form.html:322
 #: bookwyrm/templates/book/editions/format_filter.html:6
 msgid "Format:"
 msgstr "فرمت:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:282
+#: bookwyrm/templates/book/edit/edit_book_form.html:332
 msgid "Format details:"
 msgstr "جزئیات فرمت:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:293
+#: bookwyrm/templates/book/edit/edit_book_form.html:343
 msgid "Pages:"
 msgstr "صفحات:"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:304
+#: bookwyrm/templates/book/edit/edit_book_form.html:354
 msgid "Book Identifiers"
 msgstr "شناسه‌های کتاب"
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:309
+#: bookwyrm/templates/book/edit/edit_book_form.html:359
 #: bookwyrm/templates/rss/edition.html:5
 msgid "ISBN 13:"
 msgstr ""
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:318
+#: bookwyrm/templates/book/edit/edit_book_form.html:368
 msgid "ISBN 10:"
 msgstr ""
 
-#: bookwyrm/templates/book/edit/edit_book_form.html:327
+#: bookwyrm/templates/book/edit/edit_book_form.html:377
 msgid "Openlibrary ID:"
 msgstr "شناسه Openlibrary:"
+
+#: bookwyrm/templates/book/edit/edit_series.html:9
+#, python-format
+msgid "Edit \"%(title)s\""
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_series.html:20
+#, python-format
+msgid "Edit \"%(name)s\""
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_series.html:30
+#: bookwyrm/templates/settings/schedules.html:22
+msgid "Name"
+msgstr "نام"
+
+#: bookwyrm/templates/book/edit/edit_series.html:36
+#: bookwyrm/templates/book/series.html:29
+msgid "Alternative names"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_series.html:39
+#: bookwyrm/templates/book/edit/edit_series.html:42
+msgid "Add Alternative name:"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_series.html:48
+msgid "Add an Alternative name"
+msgstr ""
+
+#: bookwyrm/templates/book/edit/edit_series.html:57
+msgid "Wikidata ID:"
+msgstr ""
 
 #: bookwyrm/templates/book/editions/editions.html:4
 #, python-format
@@ -1590,7 +1733,7 @@ msgid "Any"
 msgstr "هرکدام"
 
 #: bookwyrm/templates/book/editions/language_filter.html:6
-#: bookwyrm/templates/preferences/edit_user.html:101
+#: bookwyrm/templates/preferences/edit_user.html:102
 msgid "Language:"
 msgstr "زبان:"
 
@@ -1651,7 +1794,7 @@ msgid "Domain"
 msgstr "دامنه"
 
 #: bookwyrm/templates/book/file_links/edit_links.html:36
-#: bookwyrm/templates/import/import.html:149
+#: bookwyrm/templates/import/import.html:168
 #: bookwyrm/templates/import/import_status.html:134
 #: bookwyrm/templates/import/import_user.html:192
 #: bookwyrm/templates/import/user_import_status.html:162
@@ -1752,18 +1895,52 @@ msgstr "منتشر شده در %(date)s"
 msgid "rated it"
 msgstr "آن را ارزیابی کرد"
 
-#: bookwyrm/templates/book/series.html:11
-msgid "Series by"
-msgstr "مجموعه توسط"
-
-#: bookwyrm/templates/book/series.html:28
+#: bookwyrm/templates/book/series.html:72
 #, python-format
 msgid "Book %(series_number)s"
 msgstr "کتاب %(series_number)s"
 
-#: bookwyrm/templates/book/series.html:28
-msgid "Unsorted Book"
-msgstr "کتاب نامرتب"
+#: bookwyrm/templates/book/suggestion_list/book_card.html:37
+#: bookwyrm/templates/lists/list_item.html:37
+#, python-format
+msgid "Added by %(user_link)s"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/endorsement_button.html:4
+msgid "Endorse this suggestion"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/endorsement_button.html:5
+msgid "Endorsements"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/list.html:6
+#: bookwyrm/templates/user/layout.html:111
+#: bookwyrm/templates/user/suggestions.html:6
+msgid "Suggestions"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/list.html:9
+msgid "View all suggestions"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/list.html:18
+#, python-format
+msgid "Readers who liked <em>%(title)s</em> recommend giving these books a try:"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/list.html:27
+#: bookwyrm/templates/book/suggestion_list/list.html:51
+msgid "Have a recommendation for someone who liked this book?"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/list.html:52
+msgid "Load books"
+msgstr ""
+
+#: bookwyrm/templates/book/suggestion_list/search.html:8
+msgid "Add suggestions"
+msgstr ""
 
 #: bookwyrm/templates/book/sync_modal.html:15
 #, python-format
@@ -1809,8 +1986,8 @@ msgstr "کد تأیید:"
 
 #: bookwyrm/templates/confirm_email/confirm_email.html:25
 #: bookwyrm/templates/landing/layout.html:81
-#: bookwyrm/templates/settings/dashboard/dashboard.html:107
-#: bookwyrm/templates/snippets/report_modal.html:53
+#: bookwyrm/templates/settings/dashboard/dashboard.html:106
+#: bookwyrm/templates/snippets/report_modal.html:61
 msgid "Submit"
 msgstr "ارسال"
 
@@ -1826,7 +2003,7 @@ msgstr "لینک تأیید را دوباره ارسال کنید"
 #: bookwyrm/templates/confirm_email/resend_modal.html:15
 #: bookwyrm/templates/landing/layout.html:68
 #: bookwyrm/templates/landing/password_reset_request.html:24
-#: bookwyrm/templates/preferences/edit_user.html:53
+#: bookwyrm/templates/preferences/edit_user.html:54
 #: bookwyrm/templates/snippets/register_form.html:27
 msgid "Email address:"
 msgstr "آدرس ایمیل:"
@@ -1870,7 +2047,7 @@ msgstr "شما می توانید هر زمان که بخواهید از <a href=
 
 #: bookwyrm/templates/directory/directory.html:29
 #: bookwyrm/templates/directory/directory.html:31
-#: bookwyrm/templates/feed/goal_card.html:17
+#: bookwyrm/templates/feed/goal_card.html:19
 #: bookwyrm/templates/feed/summary_card.html:12
 #: bookwyrm/templates/feed/summary_card.html:14
 #: bookwyrm/templates/snippets/announcement.html:31
@@ -1965,20 +2142,26 @@ msgstr "<a href=\"%(user_path)s\">%(username)s</a> شروع به خواندن ک
 
 #: bookwyrm/templates/discover/card-header.html:23
 #, python-format
+msgid "<a href=\"%(user_path)s\">%(username)s</a> stopped reading <a href=\"%(book_path)s\">%(book_title)s</a>"
+msgstr ""
+
+#: bookwyrm/templates/discover/card-header.html:28
+#: bookwyrm/templates/discover/card-header.html:37
+#, python-format
 msgid "<a href=\"%(user_path)s\">%(username)s</a> rated <a href=\"%(book_path)s\">%(book_title)s</a>"
 msgstr "<a href=\"%(user_path)s\">%(username)s</a> به کتاب <a href=\"%(book_path)s\">%(book_title)s</a> امتیاز داد"
 
-#: bookwyrm/templates/discover/card-header.html:27
+#: bookwyrm/templates/discover/card-header.html:33
 #, python-format
 msgid "<a href=\"%(user_path)s\">%(username)s</a> reviewed <a href=\"%(book_path)s\">%(book_title)s</a>"
 msgstr "<a href=\"%(user_path)s\">%(username)s</a> نقدی برای <a href=\"%(book_path)s\">%(book_title)s</a> نوشت."
 
-#: bookwyrm/templates/discover/card-header.html:31
+#: bookwyrm/templates/discover/card-header.html:42
 #, python-format
 msgid "<a href=\"%(user_path)s\">%(username)s</a> commented on <a href=\"%(book_path)s\">%(book_title)s</a>"
 msgstr "<a href=\"%(user_path)s\">%(username)s</a> بر روی <a href=\"%(book_path)s\">%(book_title)s</a> نظری گذاشت."
 
-#: bookwyrm/templates/discover/card-header.html:35
+#: bookwyrm/templates/discover/card-header.html:46
 #, python-format
 msgid "<a href=\"%(user_path)s\">%(username)s</a> quoted <a href=\"%(book_path)s\">%(book_title)s</a>"
 msgstr "<a href=\"%(user_path)s\">%(username)s</a> از <a href=\"%(book_path)s\">%(book_title)s</a> نقل قول کرد."
@@ -2164,14 +2347,14 @@ msgstr "در حال حاضر فعالیتی وجود ندارد! سعی کنید
 msgid "Alternatively, you can try enabling more status types"
 msgstr "به جای آن، می‌توانید تلاش کنید تا نوع‌های بیشتری از وضعیت‌ها را فعال کنید"
 
-#: bookwyrm/templates/feed/goal_card.html:6
+#: bookwyrm/templates/feed/goal_card.html:8
 #: bookwyrm/templates/feed/layout.html:14
 #: bookwyrm/templates/user/goal_form.html:6
 #, python-format
 msgid "%(year)s Reading Goal"
 msgstr "%(year)s هدف خواندن"
 
-#: bookwyrm/templates/feed/goal_card.html:18
+#: bookwyrm/templates/feed/goal_card.html:20
 #, python-format
 msgid "You can set or change your reading goal any time from your <a href=\"%(path)s\">profile page</a>"
 msgstr "شما می‌توانید هر زمان هدف خواندن خود را از <a href=\"%(path)s\">صفحه پروفایل</a> خود تنظیم یا تغییر دهید"
@@ -2230,13 +2413,13 @@ msgid "Add to your books"
 msgstr "اضافه کردن به کتاب‌های شما"
 
 #: bookwyrm/templates/get_started/book_preview.html:10
-#: bookwyrm/templates/shelf/shelf.html:93 bookwyrm/templates/user/user.html:46
+#: bookwyrm/templates/shelf/shelf.html:93 bookwyrm/templates/user/user.html:51
 #: bookwyrm/templatetags/shelf_tags.py:15
 msgid "To Read"
 msgstr "برای خواندن"
 
 #: bookwyrm/templates/get_started/book_preview.html:11
-#: bookwyrm/templates/shelf/shelf.html:94 bookwyrm/templates/user/user.html:47
+#: bookwyrm/templates/shelf/shelf.html:94 bookwyrm/templates/user/user.html:52
 #: bookwyrm/templatetags/shelf_tags.py:16
 msgid "Currently Reading"
 msgstr "در حال خواندن"
@@ -2246,12 +2429,12 @@ msgstr "در حال خواندن"
 #: bookwyrm/templates/snippets/shelf_selector.html:46
 #: bookwyrm/templates/snippets/shelve_button/shelve_button_dropdown_options.html:24
 #: bookwyrm/templates/snippets/shelve_button/shelve_button_options.html:12
-#: bookwyrm/templates/user/user.html:48 bookwyrm/templatetags/shelf_tags.py:17
+#: bookwyrm/templates/user/user.html:53 bookwyrm/templatetags/shelf_tags.py:17
 msgid "Read"
 msgstr "خوانده شده"
 
 #: bookwyrm/templates/get_started/book_preview.html:13
-#: bookwyrm/templates/shelf/shelf.html:96 bookwyrm/templates/user/user.html:49
+#: bookwyrm/templates/shelf/shelf.html:96 bookwyrm/templates/user/user.html:54
 #: bookwyrm/templatetags/shelf_tags.py:18
 msgid "Stopped Reading"
 msgstr "خواندن متوقف شده"
@@ -2261,7 +2444,8 @@ msgid "What are you reading?"
 msgstr "شما چه می‌خوانید؟"
 
 #: bookwyrm/templates/get_started/books.html:9
-#: bookwyrm/templates/layout.html:41 bookwyrm/templates/lists/list.html:213
+#: bookwyrm/templates/layout.html:41
+#: bookwyrm/templates/lists/suggestion_search.html:8
 msgid "Search for a book"
 msgstr "جستجو برای یک کتاب"
 
@@ -2281,7 +2465,8 @@ msgstr "شما می‌توانید کتاب‌ها را زمانی که استف
 #: bookwyrm/templates/get_started/users.html:23
 #: bookwyrm/templates/groups/members.html:15
 #: bookwyrm/templates/groups/members.html:16 bookwyrm/templates/layout.html:47
-#: bookwyrm/templates/layout.html:48 bookwyrm/templates/lists/list.html:217
+#: bookwyrm/templates/layout.html:48
+#: bookwyrm/templates/lists/suggestion_search.html:12
 #: bookwyrm/templates/search/layout.html:5
 #: bookwyrm/templates/search/layout.html:10
 #: bookwyrm/templates/search/layout.html:33
@@ -2302,7 +2487,7 @@ msgid "Popular on %(site_name)s"
 msgstr "محبوب در %(site_name)s"
 
 #: bookwyrm/templates/get_started/books.html:58
-#: bookwyrm/templates/lists/list.html:230
+#: bookwyrm/templates/lists/suggestion_search.html:25
 msgid "No books found"
 msgstr "کتابی یافت نشد"
 
@@ -2343,12 +2528,12 @@ msgid "Finish"
 msgstr "پایان"
 
 #: bookwyrm/templates/get_started/profile.html:15
-#: bookwyrm/templates/preferences/edit_user.html:41
+#: bookwyrm/templates/preferences/edit_user.html:42
 msgid "Display name:"
 msgstr "نام نمایش:"
 
 #: bookwyrm/templates/get_started/profile.html:29
-#: bookwyrm/templates/preferences/edit_user.html:47
+#: bookwyrm/templates/preferences/edit_user.html:48
 #: bookwyrm/templates/settings/announcements/edit_announcement.html:49
 msgid "Summary:"
 msgstr "خلاصه:"
@@ -2358,7 +2543,7 @@ msgid "A little bit about you"
 msgstr "کمی درباره شما"
 
 #: bookwyrm/templates/get_started/profile.html:43
-#: bookwyrm/templates/preferences/edit_user.html:27
+#: bookwyrm/templates/preferences/edit_user.html:28
 msgid "Avatar:"
 msgstr "آواتار:"
 
@@ -2419,6 +2604,7 @@ msgstr "این عمل غیرقابل بازگشت است"
 #: bookwyrm/templates/settings/announcements/announcement.html:23
 #: bookwyrm/templates/settings/announcements/announcements.html:56
 #: bookwyrm/templates/settings/email_blocklist/email_blocklist.html:49
+#: bookwyrm/templates/settings/invites/manage_invites.html:67
 #: bookwyrm/templates/settings/ip_blocklist/ip_blocklist.html:36
 #: bookwyrm/templates/snippets/follow_request_buttons.html:12
 #: bookwyrm/templates/snippets/join_invitation_buttons.html:14
@@ -2458,6 +2644,10 @@ msgstr "این گروه هیچ فهرستی ندارد"
 #: bookwyrm/templates/groups/layout.html:17
 msgid "Edit group"
 msgstr "ویرایش گروه"
+
+#: bookwyrm/templates/groups/members.html:6
+msgid "Group Members"
+msgstr ""
 
 #: bookwyrm/templates/groups/members.html:11
 msgid "Search to add a user"
@@ -2941,7 +3131,7 @@ msgstr "شما می‌توانید یک گروه با سایر کاربران ا
 #: bookwyrm/templates/guided_tour/user_groups.html:11
 #: bookwyrm/templates/guided_tour/user_profile.html:55
 #: bookwyrm/templates/preferences/export-user.html:37
-#: bookwyrm/templates/user/groups.html:6 bookwyrm/templates/user/layout.html:95
+#: bookwyrm/templates/user/groups.html:6 bookwyrm/templates/user/layout.html:98
 msgid "Groups"
 msgstr "گروه‌ها"
 
@@ -2995,7 +3185,7 @@ msgid "This tab shows everything you have read towards your annual reading goal,
 msgstr "این برگه همه چیزهایی را که شما برای هدف خواندن سالیانه خود خوانده‌اید نشان می‌دهد یا به شما این امکان را می‌دهد که یک هدف تعیین کنید. اگر این کار برای شما نیست، نیازی به تعیین هدف خواندن ندارید!"
 
 #: bookwyrm/templates/guided_tour/user_profile.html:32
-#: bookwyrm/templates/user/goal.html:6 bookwyrm/templates/user/layout.html:89
+#: bookwyrm/templates/user/goal.html:7 bookwyrm/templates/user/layout.html:91
 msgid "Reading Goal"
 msgstr "هدف مطالعه"
 
@@ -3032,134 +3222,146 @@ msgstr "وضعیت‌های دارای برچسب را در جامعه محلی 
 msgid "No activities for this hashtag yet!"
 msgstr "برای این هشتگ هنوز فعالیتی وجود ندارد!"
 
-#: bookwyrm/templates/import/import.html:5
 #: bookwyrm/templates/import/import.html:6
+#: bookwyrm/templates/import/import.html:7
 #: bookwyrm/templates/preferences/layout.html:43
 msgid "Import Book List"
 msgstr "فهرست کتاب را وارد کنید"
 
-#: bookwyrm/templates/import/import.html:12
+#: bookwyrm/templates/import/import.html:13
 msgid "Not a valid CSV file"
 msgstr "این فایل CSV معتبر نیست"
 
-#: bookwyrm/templates/import/import.html:20
+#: bookwyrm/templates/import/import.html:21
 #, python-format
 msgid "Currently, you are allowed to import %(display_size)s books every %(import_limit_reset)s day."
 msgid_plural "Currently, you are allowed to import %(display_size)s books every %(import_limit_reset)s days."
 msgstr[0] "در حال حاضر، شما اجازه دارید که %(display_size)s کتاب را هر %(import_limit_reset)s روز وارد کنید."
 msgstr[1] "در حال حاضر، شما اجازه دارید که %(display_size)s کتاب را هر %(import_limit_reset)s روز وارد کنید."
 
-#: bookwyrm/templates/import/import.html:26
+#: bookwyrm/templates/import/import.html:27
 #, python-format
 msgid "You have %(display_left)s left."
 msgstr "شما %(display_left)s باقی مانده دارید."
 
-#: bookwyrm/templates/import/import.html:33
+#: bookwyrm/templates/import/import.html:34
 #: bookwyrm/templates/import/import_user.html:40
 #, python-format
 msgid "On average, recent imports have taken %(hours)s hours."
 msgstr "به طور متوسط، واردات اخیر %(hours)s ساعت طول کشیده است."
 
-#: bookwyrm/templates/import/import.html:37
+#: bookwyrm/templates/import/import.html:38
 #: bookwyrm/templates/import/import_user.html:44
 #, python-format
 msgid "On average, recent imports have taken %(minutes)s minutes."
 msgstr "به طور متوسط، واردات اخیر %(minutes)s دقیقه طول کشیده است."
 
-#: bookwyrm/templates/import/import.html:52
+#: bookwyrm/templates/import/import.html:53
 msgid "Data source:"
 msgstr "منبع داده:"
 
-#: bookwyrm/templates/import/import.html:58
+#: bookwyrm/templates/import/import.html:59
 msgid "Goodreads (CSV)"
 msgstr ""
 
-#: bookwyrm/templates/import/import.html:61
+#: bookwyrm/templates/import/import.html:62
 msgid "Storygraph (CSV)"
 msgstr ""
 
-#: bookwyrm/templates/import/import.html:64
+#: bookwyrm/templates/import/import.html:65
 msgid "LibraryThing (TSV)"
 msgstr ""
 
-#: bookwyrm/templates/import/import.html:67
+#: bookwyrm/templates/import/import.html:68
 msgid "OpenLibrary (CSV)"
 msgstr ""
 
-#: bookwyrm/templates/import/import.html:70
+#: bookwyrm/templates/import/import.html:71
 msgid "OpenReads (CSV)"
 msgstr "OpenReads (CSV)"
 
-#: bookwyrm/templates/import/import.html:73
+#: bookwyrm/templates/import/import.html:74
 msgid "Calibre (CSV)"
 msgstr ""
 
-#: bookwyrm/templates/import/import.html:76
+#: bookwyrm/templates/import/import.html:77
 msgid "BookWyrm (CSV)"
 msgstr ""
 
-#: bookwyrm/templates/import/import.html:82
+#: bookwyrm/templates/import/import.html:83
 msgid "You can download your Goodreads data from the <a href=\"https://www.goodreads.com/review/import\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Import/Export page</a> of your Goodreads account."
 msgstr "شما می‌توانید داده‌های Goodreads خود را از <a href=\"https://www.goodreads.com/review/import\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">صفحه وارد/صادر</a> حساب Goodreads خود دانلود کنید."
 
-#: bookwyrm/templates/import/import.html:91
+#: bookwyrm/templates/import/import.html:92
 #: bookwyrm/templates/import/import_user.html:64
 msgid "Data file:"
 msgstr "فایل داده:"
 
-#: bookwyrm/templates/import/import.html:99
+#: bookwyrm/templates/import/import.html:100
 msgid "Include reviews"
 msgstr "شامل نظرات"
 
-#: bookwyrm/templates/import/import.html:104
+#: bookwyrm/templates/import/import.html:105
 msgid "Create new shelves if they do not exist"
 msgstr "اگر قفسه‌ها وجود ندارند، قفسه‌های جدید ایجاد کنید"
 
-#: bookwyrm/templates/import/import.html:109
+#: bookwyrm/templates/import/import.html:110
+msgid "Shelve all imported books on:"
+msgstr ""
+
+#: bookwyrm/templates/import/import.html:115
+msgid "Use shelf/status from the file"
+msgstr ""
+
+#: bookwyrm/templates/import/import.html:123
+msgid "Choose a shelf to use instead of any shelf or reading status in the file."
+msgstr ""
+
+#: bookwyrm/templates/import/import.html:128
 msgid "Privacy setting for imported reviews and shelves:"
 msgstr "تنظیم حریم خصوصی برای نظرات و قفسه‌های وارد شده:"
 
-#: bookwyrm/templates/import/import.html:116
-#: bookwyrm/templates/import/import.html:118
+#: bookwyrm/templates/import/import.html:135
+#: bookwyrm/templates/import/import.html:137
 #: bookwyrm/templates/import/import_user.html:170
 #: bookwyrm/templates/import/import_user.html:172
 #: bookwyrm/templates/settings/federation/instance_blocklist.html:78
 msgid "Import"
 msgstr "وارد کردن"
 
-#: bookwyrm/templates/import/import.html:119
+#: bookwyrm/templates/import/import.html:138
 #: bookwyrm/templates/import/import_user.html:173
 msgid "You've reached the import limit."
 msgstr "شما به حد واردات رسیده‌اید."
 
-#: bookwyrm/templates/import/import.html:128
+#: bookwyrm/templates/import/import.html:147
 #: bookwyrm/templates/import/import_user.html:27
 msgid "Imports are temporarily disabled; thank you for your patience."
 msgstr "واردات به طور موقت غیرفعال است؛ از صبر شما سپاسگزاریم."
 
-#: bookwyrm/templates/import/import.html:135
+#: bookwyrm/templates/import/import.html:154
 #: bookwyrm/templates/import/import_user.html:181
 msgid "Recent Imports"
 msgstr "واردات اخیر"
 
-#: bookwyrm/templates/import/import.html:140
+#: bookwyrm/templates/import/import.html:159
 #: bookwyrm/templates/import/import_user.html:186
 #: bookwyrm/templates/settings/imports/imports.html:202
 #: bookwyrm/templates/settings/imports/imports.html:292
 msgid "Date Created"
 msgstr "تاریخ ایجاد"
 
-#: bookwyrm/templates/import/import.html:143
+#: bookwyrm/templates/import/import.html:162
 #: bookwyrm/templates/import/import_user.html:189
 msgid "Last Updated"
 msgstr "آخرین بروزرسانی"
 
-#: bookwyrm/templates/import/import.html:146
+#: bookwyrm/templates/import/import.html:165
 #: bookwyrm/templates/settings/imports/imports.html:211
 msgid "Items"
 msgstr "اقلام"
 
-#: bookwyrm/templates/import/import.html:155
+#: bookwyrm/templates/import/import.html:174
 #: bookwyrm/templates/import/import_user.html:198
 #: bookwyrm/templates/preferences/export-user.html:122
 msgid "No recent imports"
@@ -3237,6 +3439,7 @@ msgstr "ردیف"
 
 #: bookwyrm/templates/import/import_status.html:110
 #: bookwyrm/templates/import/user_import_status.html:149
+#: bookwyrm/templates/preferences/books.html:16
 #: bookwyrm/templates/shelf/shelf.html:156
 #: bookwyrm/templates/shelf/shelf.html:178
 msgid "Title"
@@ -3697,6 +3900,7 @@ msgid "Search for a book, author, user, or list"
 msgstr "برای یک کتاب، نویسنده، کاربر، یا فهرست جستجو کنید"
 
 #: bookwyrm/templates/layout.html:54 bookwyrm/templates/layout.html:55
+#: bookwyrm/templates/search/barcode_modal.html:5
 msgid "Scan Barcode"
 msgstr "بارکد را اسکن کنید"
 
@@ -3734,8 +3938,8 @@ msgstr "اضافه کردن \"<em>%(title)s</em>\" به این لیست"
 msgid "Suggest \"<em>%(title)s</em>\" for this list"
 msgstr "پیشنهاد \"<em>%(title)s</em>\" برای این لیست"
 
-#: bookwyrm/templates/lists/add_item_modal.html:41
-#: bookwyrm/templates/lists/list.html:257
+#: bookwyrm/templates/lists/add_item_modal.html:46
+#: bookwyrm/templates/lists/suggestion_search.html:54
 msgid "Suggest"
 msgstr "پیشنهاد"
 
@@ -3775,7 +3979,6 @@ msgid "You're all set!"
 msgstr "شما آماده‌اید!"
 
 #: bookwyrm/templates/lists/curate.html:45
-#: bookwyrm/templates/lists/list.html:93
 #, python-format
 msgid "<a href=\"%(user_path)s\">%(username)s</a> says:"
 msgstr "<a href=\"%(user_path)s\">%(username)s</a> می‌گوید:"
@@ -3793,7 +3996,7 @@ msgid "Delete this list?"
 msgstr "آیا این لیست را حذف کنید؟"
 
 #: bookwyrm/templates/lists/edit_form.html:5
-#: bookwyrm/templates/lists/layout.html:23
+#: bookwyrm/templates/lists/layout.html:25
 msgid "Edit List"
 msgstr "ویرایش لیست"
 
@@ -3877,100 +4080,86 @@ msgstr "یادداشت‌ها:"
 msgid "An optional note that will be displayed with the book."
 msgstr "یادداشتی اختیاری که با کتاب نمایش داده خواهد شد."
 
-#: bookwyrm/templates/lists/list.html:37
+#: bookwyrm/templates/lists/list.html:34
 msgid "That book is already on this list."
 msgstr "این کتاب قبلاً در این لیست موجود است."
 
-#: bookwyrm/templates/lists/list.html:45
+#: bookwyrm/templates/lists/list.html:42
 msgid "You successfully suggested a book for this list!"
 msgstr "شما با موفقیت یک کتاب برای این لیست پیشنهاد کردید!"
 
-#: bookwyrm/templates/lists/list.html:47
+#: bookwyrm/templates/lists/list.html:44
 msgid "You successfully added a book to this list!"
 msgstr "شما با موفقیت یک کتاب به این لیست اضافه کردید!"
 
-#: bookwyrm/templates/lists/list.html:54
+#: bookwyrm/templates/lists/list.html:51
 msgid "This list is currently empty."
 msgstr "این لیست در حال حاضر خالی است."
 
-#: bookwyrm/templates/lists/list.html:104
-msgid "Edit notes"
-msgstr "ویرایش یادداشت‌ها"
+#: bookwyrm/templates/lists/list.html:67 bookwyrm/templates/lists/list.html:84
+msgid "Sort List"
+msgstr "مرتب‌سازی لیست"
 
-#: bookwyrm/templates/lists/list.html:119
-msgid "Add notes"
-msgstr "اضافه کردن یادداشت‌ها"
+#: bookwyrm/templates/lists/list.html:77
+msgid "Direction"
+msgstr "جهت"
 
-#: bookwyrm/templates/lists/list.html:131
+#: bookwyrm/templates/lists/list.html:92
+msgid "Add Books"
+msgstr "اضافه کردن کتاب‌ها"
+
+#: bookwyrm/templates/lists/list.html:94
+msgid "Suggest Books"
+msgstr "پیشنهاد کتاب‌ها"
+
+#: bookwyrm/templates/lists/list.html:103
+msgid "Embed this list on a website"
+msgstr "این لیست را در یک وب‌سایت جاسازی کنید"
+
+#: bookwyrm/templates/lists/list.html:111
+msgid "Copy embed code"
+msgstr "کد جاسازی را کپی کنید"
+
+#: bookwyrm/templates/lists/list.html:113
 #, python-format
-msgid "Added by <a href=\"%(user_path)s\">%(username)s</a>"
-msgstr "اضافه شده توسط <a href=\"%(user_path)s\">%(username)s</a>"
+msgid "%(list_name)s, a list by %(owner)s on %(site_name)s"
+msgstr "%(list_name)s، لیستی از %(owner)s در %(site_name)s"
 
-#: bookwyrm/templates/lists/list.html:146
+#: bookwyrm/templates/lists/list_item.html:57
 msgid "List position"
 msgstr "موقعیت لیست"
 
-#: bookwyrm/templates/lists/list.html:152
-#: bookwyrm/templates/settings/connectors/connector.html:28
+#: bookwyrm/templates/lists/list_item.html:63
+#: bookwyrm/templates/settings/connectors/connector.html:29
 #: bookwyrm/templates/settings/connectors/update.html:27
 #: bookwyrm/templates/settings/link_domains/edit_domain_modal.html:23
 msgid "Set"
 msgstr "تنظیم"
 
-#: bookwyrm/templates/lists/list.html:167
+#: bookwyrm/templates/lists/list_item.html:78
 #: bookwyrm/templates/snippets/remove_follower_button.html:4
 #: bookwyrm/templates/snippets/remove_from_group_button.html:20
 msgid "Remove"
 msgstr "حذف"
 
-#: bookwyrm/templates/lists/list.html:181
-#: bookwyrm/templates/lists/list.html:198
-msgid "Sort List"
-msgstr "مرتب‌سازی لیست"
-
-#: bookwyrm/templates/lists/list.html:191
-msgid "Direction"
-msgstr "جهت"
-
-#: bookwyrm/templates/lists/list.html:205
-msgid "Add Books"
-msgstr "اضافه کردن کتاب‌ها"
-
-#: bookwyrm/templates/lists/list.html:207
-msgid "Suggest Books"
-msgstr "پیشنهاد کتاب‌ها"
-
-#: bookwyrm/templates/lists/list.html:218
-msgid "search"
-msgstr "جستجو"
-
-#: bookwyrm/templates/lists/list.html:224
-msgid "Clear search"
-msgstr "پاک کردن جستجو"
-
-#: bookwyrm/templates/lists/list.html:229
+#: bookwyrm/templates/lists/list_item_notes.html:12
 #, python-format
-msgid "No books found matching the query \"%(query)s\""
-msgstr "هیچ کتابی مطابق با جستجوی \"%(query)s\" پیدا نشد"
+msgid "%(user_link)s says:"
+msgstr ""
 
-#: bookwyrm/templates/lists/list.html:268
-msgid "Embed this list on a website"
-msgstr "این لیست را در یک وب‌سایت جاسازی کنید"
+#: bookwyrm/templates/lists/list_item_notes.html:26
+msgid "Edit notes"
+msgstr "ویرایش یادداشت‌ها"
 
-#: bookwyrm/templates/lists/list.html:276
-msgid "Copy embed code"
-msgstr "کد جاسازی را کپی کنید"
+#: bookwyrm/templates/lists/list_item_notes.html:41
+msgid "Add notes"
+msgstr "اضافه کردن یادداشت‌ها"
 
-#: bookwyrm/templates/lists/list.html:278
-#, python-format
-msgid "%(list_name)s, a list by %(owner)s on %(site_name)s"
-msgstr "%(list_name)s، لیستی از %(owner)s در %(site_name)s"
-
-#: bookwyrm/templates/lists/list_items.html:15
+#: bookwyrm/templates/lists/list_items.html:16
 msgid "Saved"
 msgstr "ذخیره شده"
 
-#: bookwyrm/templates/lists/list_items.html:50
+#: bookwyrm/templates/lists/list_items.html:51
 msgid "No lists found."
 msgstr "هیچ لیستی پیدا نشد."
 
@@ -3985,6 +4174,19 @@ msgstr "همه لیست‌‌ها"
 #: bookwyrm/templates/lists/lists.html:40
 msgid "Saved Lists"
 msgstr "لیست‌‌های ذخیره‌‌شده"
+
+#: bookwyrm/templates/lists/suggestion_search.html:13
+msgid "search"
+msgstr "جستجو"
+
+#: bookwyrm/templates/lists/suggestion_search.html:19
+msgid "Clear search"
+msgstr "پاک کردن جستجو"
+
+#: bookwyrm/templates/lists/suggestion_search.html:24
+#, python-format
+msgid "No books found matching the query \"%(query)s\""
+msgstr "هیچ کتابی مطابق با جستجوی \"%(query)s\" پیدا نشد"
 
 #: bookwyrm/templates/moved.html:27
 #, python-format
@@ -4309,7 +4511,7 @@ msgstr[0] "یک <a href=\"%(path)s\">گزارش</a> جدید نیاز به تع�
 msgstr[1] "%(display_count)s <a href=\"%(path)s\">گزارش</a> جدید نیاز به تعدیل دارند"
 
 #: bookwyrm/templates/notifications/items/status_preview.html:4
-#: bookwyrm/templates/snippets/status/content_status.html:62
+#: bookwyrm/templates/snippets/status/content_status.html:64
 msgid "Content warning"
 msgstr "هشدار محتوا"
 
@@ -4521,6 +4723,16 @@ msgstr "کاربران مسدود شده"
 msgid "No users currently blocked."
 msgstr "هیچ کاربری در حال حاضر مسدود نشده است."
 
+#: bookwyrm/templates/preferences/books.html:4
+#: bookwyrm/templates/preferences/books.html:7
+#: bookwyrm/templates/preferences/layout.html:66
+msgid "Blocked Books"
+msgstr ""
+
+#: bookwyrm/templates/preferences/books.html:12
+msgid "No books currently blocked."
+msgstr ""
+
 #: bookwyrm/templates/preferences/change_password.html:4
 #: bookwyrm/templates/preferences/change_password.html:7
 #: bookwyrm/templates/preferences/change_password.html:37
@@ -4589,14 +4801,14 @@ msgid "Edit Profile"
 msgstr "ویرایش پروفایل"
 
 #: bookwyrm/templates/preferences/edit_user.html:12
-#: bookwyrm/templates/preferences/edit_user.html:25
+#: bookwyrm/templates/preferences/edit_user.html:26
 #: bookwyrm/templates/settings/users/user_info.html:8
 #: bookwyrm/templates/user_menu.html:29
 msgid "Profile"
 msgstr "پروفایل"
 
 #: bookwyrm/templates/preferences/edit_user.html:13
-#: bookwyrm/templates/preferences/edit_user.html:64
+#: bookwyrm/templates/preferences/edit_user.html:65
 #: bookwyrm/templates/settings/site.html:11
 #: bookwyrm/templates/settings/site.html:89
 #: bookwyrm/templates/setup/config.html:85
@@ -4604,55 +4816,72 @@ msgid "Display"
 msgstr "نمایش"
 
 #: bookwyrm/templates/preferences/edit_user.html:14
-#: bookwyrm/templates/preferences/edit_user.html:118
+#: bookwyrm/templates/preferences/edit_user.html:119
 msgid "Privacy"
 msgstr "حریم خصوصی"
 
-#: bookwyrm/templates/preferences/edit_user.html:69
+#: bookwyrm/templates/preferences/edit_user.html:15
+#: bookwyrm/templates/preferences/edit_user.html:157
+msgid "Integrations"
+msgstr ""
+
+#: bookwyrm/templates/preferences/edit_user.html:70
 msgid "Show reading goal prompt in feed"
 msgstr "نمایش درخواست هدف خواندن در خوراک"
 
-#: bookwyrm/templates/preferences/edit_user.html:75
+#: bookwyrm/templates/preferences/edit_user.html:76
 msgid "Show ratings"
 msgstr "نمایش امتیازات"
 
-#: bookwyrm/templates/preferences/edit_user.html:81
+#: bookwyrm/templates/preferences/edit_user.html:82
 msgid "Show suggested users"
 msgstr "نمایش کاربران پیشنهادی"
 
-#: bookwyrm/templates/preferences/edit_user.html:87
+#: bookwyrm/templates/preferences/edit_user.html:88
 msgid "Show this account in suggested users"
 msgstr "نمایش این حساب در کاربران پیشنهادی"
 
-#: bookwyrm/templates/preferences/edit_user.html:91
+#: bookwyrm/templates/preferences/edit_user.html:92
 #, python-format
 msgid "Your account will show up in the <a href=\"%(path)s\">directory</a>, and may be recommended to other BookWyrm users."
 msgstr "حساب شما در <a href=\"%(path)s\">فهرست</a> ظاهر خواهد شد و ممکن است به کاربران دیگر BookWyrm پیشنهاد شود."
 
-#: bookwyrm/templates/preferences/edit_user.html:95
+#: bookwyrm/templates/preferences/edit_user.html:96
 msgid "Preferred Timezone: "
 msgstr "منطقه زمانی مورد نظر: "
 
-#: bookwyrm/templates/preferences/edit_user.html:107
+#: bookwyrm/templates/preferences/edit_user.html:108
 msgid "Theme:"
 msgstr "تم:"
 
-#: bookwyrm/templates/preferences/edit_user.html:123
+#: bookwyrm/templates/preferences/edit_user.html:124
+msgid "Make profile private"
+msgstr ""
+
+#: bookwyrm/templates/preferences/edit_user.html:130
 msgid "Manually approve followers"
 msgstr "تأیید دستی دنبال‌کنندگان"
 
-#: bookwyrm/templates/preferences/edit_user.html:129
+#: bookwyrm/templates/preferences/edit_user.html:136
 msgid "Hide followers and following on profile"
 msgstr "پنهان کردن دنبال‌کنندگان و دنبال‌شدگان در پروفایل"
 
-#: bookwyrm/templates/preferences/edit_user.html:134
+#: bookwyrm/templates/preferences/edit_user.html:141
 msgid "Default post privacy:"
 msgstr "حریم خصوصی پیش‌فرض پست:"
 
-#: bookwyrm/templates/preferences/edit_user.html:142
+#: bookwyrm/templates/preferences/edit_user.html:149
 #, python-format
 msgid "Looking for shelf privacy? You can set a separate visibility level for each of your shelves. Go to <a href=\"%(path)s\">Your Books</a>, pick a shelf from the tab bar, and click \"Edit shelf.\""
 msgstr "به دنبال حریم خصوصی قفسه هستید؟ می‌توانید سطح دیدپذیری جداگانه‌ای برای هر یک از قفسه‌های خود تعیین کنید. به <a href=\"%(path)s\">کتاب‌های شما</a> بروید، یک قفسه را از نوار برگه انتخاب کنید و \"ویرایش قفسه\" را کلیک کنید."
+
+#: bookwyrm/templates/preferences/edit_user.html:160
+msgid "Readwise access token:"
+msgstr ""
+
+#: bookwyrm/templates/preferences/edit_user.html:165
+msgid "Send new quote posts to Readwise. You can create a token at <a href=\"https://readwise.io/access_token\">readwise.io/access_token</a>."
+msgstr ""
 
 #: bookwyrm/templates/preferences/export-user.html:6
 #: bookwyrm/templates/preferences/export-user.html:9
@@ -4776,7 +5005,7 @@ msgstr "صادر کردن فهرست کتاب"
 msgid "Your CSV export file will include all the books on your shelves, books you have reviewed, and books with reading activity. <br/>Use this to import into a service like Goodreads."
 msgstr "فایل صادر CSV شما شامل تمام کتاب‌هایی روی قفسه‌های شما، کتاب‌هایی که نقد کرده‌اید و کتاب‌هایی با فعالیت خواندن خواهد شد. <br/>از این برای درونریزی به سرویسی مانند Goodreads استفاده کنید."
 
-#: bookwyrm/templates/preferences/export.html:20
+#: bookwyrm/templates/preferences/export.html:19
 msgid "Download file"
 msgstr "دانلود فایل"
 
@@ -4797,8 +5026,8 @@ msgid "Data"
 msgstr "داده"
 
 #: bookwyrm/templates/preferences/layout.html:58
-msgid "Relationships"
-msgstr "روابط"
+msgid "Safety"
+msgstr ""
 
 #: bookwyrm/templates/preferences/move_user.html:12
 msgid "Migrate account to another server"
@@ -4969,10 +5198,9 @@ msgid "You are deleting this readthrough and its %(count)s associated progress u
 msgstr "شما این خواندگی و %(count)s به‌روزرسانی پیشرفت مرتبط آن را حذف می‌کنید."
 
 #: bookwyrm/templates/readthrough/readthrough.html:6
-#: bookwyrm/templates/readthrough/readthrough_modal.html:8
 #, python-format
-msgid "Update read dates for \"<em>%(title)s</em>\""
-msgstr "به‌روزرسانی تاریخ‌های خواندن برای \"<em>%(title)s</em>\""
+msgid "Update read dates for \"%(title)s\""
+msgstr ""
 
 #: bookwyrm/templates/readthrough/readthrough_form.html:10
 #: bookwyrm/templates/readthrough/readthrough_modal.html:38
@@ -5026,76 +5254,86 @@ msgstr "ویرایش تاریخ‌های خواندن"
 msgid "Delete these read dates"
 msgstr "حذف این تاریخ‌های خواندن"
 
+#: bookwyrm/templates/readthrough/readthrough_modal.html:8
+#, python-format
+msgid "Update read dates for \"<em>%(title)s</em>\""
+msgstr "به‌روزرسانی تاریخ‌های خواندن برای \"<em>%(title)s</em>\""
+
 #: bookwyrm/templates/readthrough/readthrough_modal.html:12
 #, python-format
 msgid "Add read dates for \"<em>%(title)s</em>\""
 msgstr "اضافه کردن تاریخ‌های خواندن برای \"<em>%(title)s</em>\""
 
 #: bookwyrm/templates/report.html:5
-#: bookwyrm/templates/snippets/report_button.html:13
+#: bookwyrm/templates/snippets/report_button.html:14
 msgid "Report"
 msgstr "گزارش"
 
-#: bookwyrm/templates/search/barcode_modal.html:21
+#: bookwyrm/templates/search/barcode_modal.html:19
 msgid "Requesting camera..."
 msgstr "درخواست دوربین..."
 
-#: bookwyrm/templates/search/barcode_modal.html:22
+#: bookwyrm/templates/search/barcode_modal.html:20
 msgid "Grant access to the camera to scan a book's barcode."
 msgstr "دسترسی به دوربین را برای اسکن بارکد کتاب اعطا کنید."
 
-#: bookwyrm/templates/search/barcode_modal.html:27
+#: bookwyrm/templates/search/barcode_modal.html:25
 msgid "Could not access camera"
 msgstr "نمی‌توان به دوربین دسترسی پیدا کرد"
 
-#: bookwyrm/templates/search/barcode_modal.html:31
+#: bookwyrm/templates/search/barcode_modal.html:29
 msgctxt "barcode scanner"
 msgid "Scanning..."
 msgstr "در حال اسکن..."
 
-#: bookwyrm/templates/search/barcode_modal.html:32
+#: bookwyrm/templates/search/barcode_modal.html:30
 msgid "Align your book's barcode with the camera."
 msgstr "بارکد کتاب خود را با دوربین تراز کنید."
 
-#: bookwyrm/templates/search/barcode_modal.html:36
+#: bookwyrm/templates/search/barcode_modal.html:34
 msgctxt "barcode scanner"
 msgid "ISBN scanned"
 msgstr "ISBN اسکن شد"
 
-#: bookwyrm/templates/search/barcode_modal.html:37
+#: bookwyrm/templates/search/barcode_modal.html:35
 msgctxt "followed by ISBN"
 msgid "Searching for book:"
 msgstr "جستجو برای کتاب:"
 
-#: bookwyrm/templates/search/book.html:25
+#: bookwyrm/templates/search/book.html:12
+#, python-format
+msgid "<em>Some <a href=\"%(bb_path)s\">blocked books</a> have been excluded.</em>"
+msgstr ""
+
+#: bookwyrm/templates/search/book.html:35
 #, python-format
 msgid "%(formatted_review_count)s review"
 msgid_plural "%(formatted_review_count)s reviews"
 msgstr[0] "%(formatted_review_count)s نقد"
 msgstr[1] "%(formatted_review_count)s نقد"
 
-#: bookwyrm/templates/search/book.html:34
+#: bookwyrm/templates/search/book.html:44
 #, python-format
 msgid "(published %(pub_year)s)"
 msgstr "(منتشر شده %(pub_year)s)"
 
-#: bookwyrm/templates/search/book.html:50
+#: bookwyrm/templates/search/book.html:60
 msgid "Results from"
 msgstr "نتایج از"
 
-#: bookwyrm/templates/search/book.html:89
+#: bookwyrm/templates/search/book.html:99
 msgid "Import book"
 msgstr "درونریزی کتاب"
 
-#: bookwyrm/templates/search/book.html:113
+#: bookwyrm/templates/search/book.html:123
 msgid "Load results from other catalogues"
 msgstr "بارگذاری نتایج از فهرست‌های دیگر"
 
-#: bookwyrm/templates/search/book.html:117
+#: bookwyrm/templates/search/book.html:127
 msgid "Manually add book"
 msgstr "اضافه کردن کتاب به صورت دستی"
 
-#: bookwyrm/templates/search/book.html:122
+#: bookwyrm/templates/search/book.html:132
 msgid "Log in to import or add books."
 msgstr "برای درونریزی یا اضافه کردن کتاب وارد شوید."
 
@@ -5103,7 +5341,7 @@ msgstr "برای درونریزی یا اضافه کردن کتاب وارد ش�
 msgid "Search query"
 msgstr "جستجوی پرس و جو"
 
-#: bookwyrm/templates/search/layout.html:20
+#: bookwyrm/templates/search/layout.html:21
 msgid "Search type"
 msgstr "نوع جستجو"
 
@@ -5163,13 +5401,13 @@ msgstr "خیر"
 
 #: bookwyrm/templates/settings/announcements/announcement.html:57
 #: bookwyrm/templates/settings/announcements/edit_announcement.html:79
-#: bookwyrm/templates/settings/dashboard/dashboard.html:85
+#: bookwyrm/templates/settings/dashboard/dashboard.html:84
 msgid "Start date:"
 msgstr "تاریخ شروع:"
 
 #: bookwyrm/templates/settings/announcements/announcement.html:62
 #: bookwyrm/templates/settings/announcements/edit_announcement.html:89
-#: bookwyrm/templates/settings/dashboard/dashboard.html:91
+#: bookwyrm/templates/settings/dashboard/dashboard.html:90
 msgid "End date:"
 msgstr "تاریخ پایان:"
 
@@ -5437,7 +5675,7 @@ msgid "Run time"
 msgstr "مدت اجرا"
 
 #: bookwyrm/templates/settings/celery.html:134
-#: bookwyrm/templates/settings/connectors/connector.html:22
+#: bookwyrm/templates/settings/connectors/connector.html:23
 #: bookwyrm/templates/settings/connectors/update.html:21
 msgid "Priority"
 msgstr "اولویت"
@@ -5484,18 +5722,26 @@ msgstr "Libris فهرست کتابخانه‌ی ملی سوئد است که دس
 msgid "Create new connector"
 msgstr "ایجاد اتصال‌دهنده جدید"
 
-#: bookwyrm/templates/settings/connectors/connector.html:35
+#: bookwyrm/templates/settings/connectors/connector.html:36
 #: bookwyrm/templates/settings/connectors/update.html:33
 #: bookwyrm/templates/settings/users/user_info.html:87
 msgid "Deactivation reason:"
 msgstr "دلیل غیرفعال‌سازی:"
 
+#: bookwyrm/templates/settings/connectors/connector.html:43
+msgid "Latest successful request"
+msgstr ""
+
 #: bookwyrm/templates/settings/connectors/connector.html:50
+msgid "Latest error"
+msgstr ""
+
+#: bookwyrm/templates/settings/connectors/connector.html:66
 #: bookwyrm/templates/settings/connectors/update.html:47
 msgid "Deactivate"
 msgstr "غیرفعال کردن"
 
-#: bookwyrm/templates/settings/connectors/connector.html:61
+#: bookwyrm/templates/settings/connectors/connector.html:77
 #: bookwyrm/templates/settings/connectors/update.html:58
 msgid "Activate"
 msgstr "فعال کردن"
@@ -5543,7 +5789,7 @@ msgid "Dashboard"
 msgstr "داشبورد"
 
 #: bookwyrm/templates/settings/dashboard/dashboard.html:15
-#: bookwyrm/templates/settings/dashboard/dashboard.html:114
+#: bookwyrm/templates/settings/dashboard/dashboard.html:113
 msgid "Total users"
 msgstr "کل کاربران"
 
@@ -5557,31 +5803,31 @@ msgstr "فعال در این ماه"
 msgid "Works"
 msgstr "آثار"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:79
+#: bookwyrm/templates/settings/dashboard/dashboard.html:78
 msgid "Instance Activity"
 msgstr "فعالیت نمونه"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:97
+#: bookwyrm/templates/settings/dashboard/dashboard.html:96
 msgid "Interval:"
 msgstr "بازه:"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:101
+#: bookwyrm/templates/settings/dashboard/dashboard.html:100
 msgid "Days"
 msgstr "روزها"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:102
+#: bookwyrm/templates/settings/dashboard/dashboard.html:101
 msgid "Weeks"
 msgstr "هفته‌ها"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:120
+#: bookwyrm/templates/settings/dashboard/dashboard.html:119
 msgid "User signup activity"
 msgstr "فعالیت ثبت‌نام کاربر"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:126
+#: bookwyrm/templates/settings/dashboard/dashboard.html:125
 msgid "Status activity"
 msgstr "فعالیت وضعیت"
 
-#: bookwyrm/templates/settings/dashboard/dashboard.html:132
+#: bookwyrm/templates/settings/dashboard/dashboard.html:131
 msgid "Works created"
 msgstr "آثار ایجاد شده"
 
@@ -5822,6 +6068,7 @@ msgid "All users from this instance will be deactivated."
 msgstr "تمام کاربران از این نمونه غیرفعال خواهند شد."
 
 #: bookwyrm/templates/settings/federation/instance.html:122
+#: bookwyrm/templates/snippets/block_book_button.html:10
 #: bookwyrm/templates/snippets/block_button.html:10
 msgid "Un-block"
 msgstr "رفع مسدودیت"
@@ -5893,12 +6140,48 @@ msgid "Unable to save settings"
 msgstr "نمی‌توان تنظیمات را ذخیره کرد"
 
 #: bookwyrm/templates/settings/federation/settings.html:37
+msgid "Require signed GET requests"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:38
+msgid "Recommended"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:42
+msgid "Prevents anonymous requests from federated instances. Roughly equivalent to Mastodon's 'secure mode' or 'AUTHORIZED_FETCH'"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:48
+msgid "Prevent unauthenticated views"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:51
+msgid "Prevents anonymous users from seeing most pages. To block JSON requests as well, enable 'Require signed GET requests'"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:57
 msgid "Disable federation"
 msgstr "غیرفعال کردن فدراسیون"
 
-#: bookwyrm/templates/settings/federation/settings.html:40
+#: bookwyrm/templates/settings/federation/settings.html:58
+msgid "Caution"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:61
 msgid "Prevents your instance from interacting with other federated services. Existing data from other instances will still be present."
 msgstr "مانع تعامل نمونه شما با سرویس‌های فدراسیون دیگر می‌شود. داده‌های موجود از نمونه‌های دیگر همچنان وجود خواهند داشت."
+
+#: bookwyrm/templates/settings/federation/settings.html:67
+msgid "Block incoming search"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:68
+msgid "Not Recommended"
+msgstr ""
+
+#: bookwyrm/templates/settings/federation/settings.html:71
+msgid "Prevents other servers from searching your instance. It is strongly recommended you do NOT enable this setting."
+msgstr ""
 
 #: bookwyrm/templates/settings/files.html:7
 #: bookwyrm/templates/settings/files.html:11
@@ -6152,6 +6435,7 @@ msgid "Answer"
 msgstr "پاسخ"
 
 #: bookwyrm/templates/settings/invites/manage_invite_requests.html:51
+#: bookwyrm/templates/settings/invites/manage_invites.html:51
 msgid "Action"
 msgstr "عمل"
 
@@ -6174,27 +6458,31 @@ msgstr "ارسال شده"
 msgid "Requested"
 msgstr "درخواست شده"
 
-#: bookwyrm/templates/settings/invites/manage_invite_requests.html:80
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:81
 msgid "Send invite"
 msgstr "ارسال دعوت"
 
-#: bookwyrm/templates/settings/invites/manage_invite_requests.html:82
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:83
 msgid "Re-send invite"
 msgstr "دوباره ارسال دعوت"
 
-#: bookwyrm/templates/settings/invites/manage_invite_requests.html:102
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:96
+msgid "Revoke invite"
+msgstr ""
+
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:112
 msgid "Ignore"
 msgstr "نادیده گرفتن"
 
-#: bookwyrm/templates/settings/invites/manage_invite_requests.html:104
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:114
 msgid "Un-ignore"
 msgstr "قبول"
 
-#: bookwyrm/templates/settings/invites/manage_invite_requests.html:116
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:127
 msgid "Back to pending requests"
 msgstr "بازگشت به درخواست‌های در انتظار"
 
-#: bookwyrm/templates/settings/invites/manage_invite_requests.html:118
+#: bookwyrm/templates/settings/invites/manage_invite_requests.html:129
 msgid "View ignored requests"
 msgstr "مشاهده درخواست‌های نادیده‌گرفته شده"
 
@@ -6226,7 +6514,7 @@ msgstr "حداکثر استفاده"
 msgid "Times used"
 msgstr "تعداد استفاده"
 
-#: bookwyrm/templates/settings/invites/manage_invites.html:53
+#: bookwyrm/templates/settings/invites/manage_invites.html:54
 msgid "No active invites"
 msgstr "هیچ دعوت فعالی نیست"
 
@@ -6503,32 +6791,32 @@ msgid "Update on your report:"
 msgstr "به‌روزرسانی گزارش شما:"
 
 #: bookwyrm/templates/settings/reports/report.html:37
-msgid "Reported status"
-msgstr "وضعیت گزارش شده"
+msgid "Reported statuses"
+msgstr ""
 
-#: bookwyrm/templates/settings/reports/report.html:39
+#: bookwyrm/templates/settings/reports/report.html:41
 msgid "Status has been deleted"
 msgstr "وضعیت حذف شده است"
 
-#: bookwyrm/templates/settings/reports/report.html:48
+#: bookwyrm/templates/settings/reports/report.html:52
 msgid "Reported links"
 msgstr "پیوندهای گزارش شده"
 
-#: bookwyrm/templates/settings/reports/report.html:66
+#: bookwyrm/templates/settings/reports/report.html:70
 msgid "Moderation Activity"
 msgstr "فعالیت تعدیل"
 
-#: bookwyrm/templates/settings/reports/report.html:73
+#: bookwyrm/templates/settings/reports/report.html:77
 #, python-format
 msgid "<a href=\"%(user_link)s\">%(user)s</a> opened this report"
 msgstr "<a href=\"%(user_link)s\">%(user)s</a> این گزارش را باز کرد"
 
-#: bookwyrm/templates/settings/reports/report.html:86
+#: bookwyrm/templates/settings/reports/report.html:90
 #, python-format
 msgid "<a href=\"%(user_link)s\">%(user)s</a> commented on this report:"
 msgstr "<a href=\"%(user_link)s\">%(user)s</a> درباره این گزارش نظر داد:"
 
-#: bookwyrm/templates/settings/reports/report.html:90
+#: bookwyrm/templates/settings/reports/report.html:94
 #, python-format
 msgid "<a href=\"%(user_link)s\">%(user)s</a> took an action on this report:"
 msgstr "<a href=\"%(user_link)s\">%(user)s</a> اقدامی در این گزارش انجام داد:"
@@ -6570,11 +6858,19 @@ msgstr "هیچ یادداشتی ارائه نشده"
 msgid "Reported by <a href=\"%(path)s\">@%(username)s</a>"
 msgstr "گزارش شده توسط <a href=\"%(path)s\">@%(username)s</a>"
 
-#: bookwyrm/templates/settings/reports/report_preview.html:34
+#: bookwyrm/templates/settings/reports/report_preview.html:29
+msgid "Sent to remote instance"
+msgstr ""
+
+#: bookwyrm/templates/settings/reports/report_preview.html:31
+msgid "<b>Not</b> sent to remote instance"
+msgstr ""
+
+#: bookwyrm/templates/settings/reports/report_preview.html:43
 msgid "Re-open"
 msgstr "دوباره باز کنید"
 
-#: bookwyrm/templates/settings/reports/report_preview.html:36
+#: bookwyrm/templates/settings/reports/report_preview.html:45
 msgid "Resolve"
 msgstr "حل کردن"
 
@@ -6609,10 +6905,6 @@ msgstr "وظایف برنامه‌ریزی شده"
 #: bookwyrm/templates/settings/schedules.html:101
 msgid "Tasks"
 msgstr "وظایف"
-
-#: bookwyrm/templates/settings/schedules.html:22
-msgid "Name"
-msgstr "نام"
 
 #: bookwyrm/templates/settings/schedules.html:25
 msgid "Celery task"
@@ -7094,7 +7386,7 @@ msgid "Edit Shelf"
 msgstr "ویرایش قفسه"
 
 #: bookwyrm/templates/shelf/shelf.html:46
-#: bookwyrm/templatetags/shelf_tags.py:14 bookwyrm/views/shelf/shelf.py:60
+#: bookwyrm/templatetags/shelf_tags.py:14 bookwyrm/views/shelf/shelf.py:61
 msgid "All books"
 msgstr "تمام کتاب‌ها"
 
@@ -7232,14 +7524,14 @@ msgstr ""
 msgid "of %(pages)s pages"
 msgstr ""
 
-#: bookwyrm/templates/snippets/create_status/content_field.html:18
+#: bookwyrm/templates/snippets/create_status/content_field.html:21
 #: bookwyrm/templates/snippets/status/layout.html:34
 #: bookwyrm/templates/snippets/status/layout.html:53
 #: bookwyrm/templates/snippets/status/layout.html:54
 msgid "Reply"
 msgstr ""
 
-#: bookwyrm/templates/snippets/create_status/content_field.html:18
+#: bookwyrm/templates/snippets/create_status/content_field.html:21
 msgid "Content"
 msgstr ""
 
@@ -7273,10 +7565,6 @@ msgstr ""
 msgid "An excerpt from '%(book_title)s'"
 msgstr ""
 
-#: bookwyrm/templates/snippets/create_status/quotation.html:31
-msgid "Position:"
-msgstr ""
-
 #: bookwyrm/templates/snippets/create_status/quotation.html:44
 msgid "On page:"
 msgstr ""
@@ -7289,12 +7577,12 @@ msgstr ""
 msgid "to"
 msgstr ""
 
-#: bookwyrm/templates/snippets/create_status/review.html:24
+#: bookwyrm/templates/snippets/create_status/review.html:23
 #, python-format
 msgid "Your review of '%(book_title)s'"
 msgstr ""
 
-#: bookwyrm/templates/snippets/create_status/review.html:39
+#: bookwyrm/templates/snippets/create_status/review.html:38
 msgid "Review:"
 msgstr ""
 
@@ -7392,6 +7680,13 @@ msgstr[1] ""
 #, python-format
 msgid "rated <em><a href=\"%(path)s\">%(title)s</a></em>: %(display_rating)s star"
 msgid_plural "rated <em><a href=\"%(path)s\">%(title)s</a></em>: %(display_rating)s stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bookwyrm/templates/snippets/generated_status/rating_pure_name.html:3
+#, python-format
+msgid "Rated \"%(book_title)s\" %(display_rating)s star %(review_title)s"
+msgid_plural "Rated \"%(book_title)s\" %(display_rating)s stars %(review_title)s"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -7563,7 +7858,11 @@ msgstr ""
 msgid "Links from this domain will be removed until your report has been reviewed."
 msgstr ""
 
-#: bookwyrm/templates/snippets/report_modal.html:41
+#: bookwyrm/templates/snippets/report_modal.html:42
+msgid "Also send this report to the user's instance admins"
+msgstr ""
+
+#: bookwyrm/templates/snippets/report_modal.html:49
 msgid "More info about this report:"
 msgstr ""
 
@@ -7599,6 +7898,10 @@ msgstr ""
 msgid "Stop reading"
 msgstr ""
 
+#: bookwyrm/templates/snippets/shelve_button/shelve_button_dropdown_options.html:82
+msgid "Block this book"
+msgstr ""
+
 #: bookwyrm/templates/snippets/shelve_button/shelve_button_options.html:40
 msgid "Finish reading"
 msgstr ""
@@ -7607,35 +7910,35 @@ msgstr ""
 msgid "Show rating"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:69
+#: bookwyrm/templates/snippets/status/content_status.html:71
 msgid "Show status"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:91
+#: bookwyrm/templates/snippets/status/content_status.html:93
 #, python-format
 msgid "(Page %(page)s"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:91
+#: bookwyrm/templates/snippets/status/content_status.html:93
 #, python-format
 msgid "%(endpage)s"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:93
+#: bookwyrm/templates/snippets/status/content_status.html:95
 #, python-format
 msgid "(%(percent)s%%"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:93
+#: bookwyrm/templates/snippets/status/content_status.html:95
 #, python-format
 msgid " - %(endpercent)s%%"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:116
+#: bookwyrm/templates/snippets/status/content_status.html:118
 msgid "Open image in new window"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/content_status.html:137
+#: bookwyrm/templates/snippets/status/content_status.html:139
 msgid "Hide status"
 msgstr ""
 
@@ -7694,14 +7997,20 @@ msgstr ""
 msgid "started reading <a href=\"%(book_path)s\">%(book)s</a>"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/headers/review.html:8
+#: bookwyrm/templates/snippets/status/headers/review.html:10
+#: bookwyrm/templates/snippets/status/headers/review.html:26
 #, python-format
 msgid "reviewed <a href=\"%(book_path)s\">%(book)s</a> by <a href=\"%(author_path)s\">%(author_name)s</a>"
 msgstr ""
 
-#: bookwyrm/templates/snippets/status/headers/review.html:15
+#: bookwyrm/templates/snippets/status/headers/review.html:17
 #, python-format
 msgid "reviewed <a href=\"%(book_path)s\">%(book)s</a>"
+msgstr ""
+
+#: bookwyrm/templates/snippets/status/headers/review.html:33
+#, python-format
+msgid "rated <a href=\"%(book_path)s\">%(book)s</a>"
 msgstr ""
 
 #: bookwyrm/templates/snippets/status/headers/stopped_reading.html:10
@@ -7760,11 +8069,11 @@ msgstr ""
 msgid "Sorted descending"
 msgstr ""
 
-#: bookwyrm/templates/snippets/trimmed_text.html:17
+#: bookwyrm/templates/snippets/trimmed_text.html:18
 msgid "Show more"
 msgstr ""
 
-#: bookwyrm/templates/snippets/trimmed_text.html:35
+#: bookwyrm/templates/snippets/trimmed_text.html:36
 msgid "Show less"
 msgstr ""
 
@@ -7805,26 +8114,26 @@ msgstr ""
 msgid "%(username)s's books"
 msgstr ""
 
-#: bookwyrm/templates/user/goal.html:12
+#: bookwyrm/templates/user/goal.html:13
 #, python-format
 msgid "%(year)s Reading Progress"
 msgstr ""
 
-#: bookwyrm/templates/user/goal.html:16
+#: bookwyrm/templates/user/goal.html:17
 msgid "Edit Goal"
 msgstr ""
 
-#: bookwyrm/templates/user/goal.html:32
+#: bookwyrm/templates/user/goal.html:33
 #, python-format
 msgid "%(name)s hasn't set a reading goal for %(year)s."
 msgstr ""
 
-#: bookwyrm/templates/user/goal.html:44
+#: bookwyrm/templates/user/goal.html:45
 #, python-format
 msgid "Your %(year)s Books"
 msgstr ""
 
-#: bookwyrm/templates/user/goal.html:46
+#: bookwyrm/templates/user/goal.html:47
 #, python-format
 msgid "%(username)s's %(year)s Books"
 msgstr ""
@@ -7842,7 +8151,7 @@ msgstr ""
 msgid "Follow Requests"
 msgstr ""
 
-#: bookwyrm/templates/user/layout.html:83
+#: bookwyrm/templates/user/layout.html:84
 #: bookwyrm/templates/user/reviews_comments.html:6
 #: bookwyrm/templates/user/reviews_comments.html:12
 msgid "Reviews and Comments"
@@ -7884,6 +8193,15 @@ msgstr ""
 msgid "No reviews or comments yet!"
 msgstr ""
 
+#: bookwyrm/templates/user/suggestions.html:13
+msgid "Your Suggestions"
+msgstr ""
+
+#: bookwyrm/templates/user/suggestions.html:27
+#, python-format
+msgid "<a href=\"%(url)s\">%(list_name)s</a>"
+msgstr ""
+
 #: bookwyrm/templates/user/user.html:20
 msgid "Edit profile"
 msgstr ""
@@ -7892,49 +8210,53 @@ msgstr ""
 msgid "Federation is currently disabled, so you will not be able to interact with this user."
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:51
+#: bookwyrm/templates/user/user.html:39
+msgid "This profile is private. Follow this user to see their activity."
+msgstr ""
+
+#: bookwyrm/templates/user/user.html:56
 #, python-format
 msgid "View all %(size)s"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:70
+#: bookwyrm/templates/user/user.html:75
 msgid "View all books"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:78
+#: bookwyrm/templates/user/user.html:83
 #, python-format
 msgid "%(current_year)s Reading Goal"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:85
+#: bookwyrm/templates/user/user.html:90
 msgid "User Activity"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:91
+#: bookwyrm/templates/user/user.html:96
 msgid "Show RSS Options"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:97
+#: bookwyrm/templates/user/user.html:102
 msgid "RSS feed"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:113
+#: bookwyrm/templates/user/user.html:118
 msgid "Complete feed"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:118
+#: bookwyrm/templates/user/user.html:123
 msgid "Reviews only"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:123
+#: bookwyrm/templates/user/user.html:128
 msgid "Quotes only"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:128
+#: bookwyrm/templates/user/user.html:133
 msgid "Comments only"
 msgstr ""
 
-#: bookwyrm/templates/user/user.html:144
+#: bookwyrm/templates/user/user.html:149
 msgid "No activities yet!"
 msgstr ""
 
@@ -7982,13 +8304,25 @@ msgid_plural "%(num)d books - by %(user)s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: bookwyrm/templatetags/utilities.py:50
+#: bookwyrm/templatetags/utilities.py:43
+msgid "deactivated user"
+msgstr ""
+
+#: bookwyrm/templatetags/utilities.py:63
 #, python-format
 msgid "%(title)s: %(subtitle)s"
 msgstr ""
 
-#: bookwyrm/templatetags/utilities.py:133
+#: bookwyrm/templatetags/utilities.py:164
 msgid "a new user account"
+msgstr ""
+
+#: bookwyrm/views/books/edit_book.py:82 bookwyrm/views/books/edit_book.py:488
+msgid "There is another book in the series with the same value"
+msgstr ""
+
+#: bookwyrm/views/books/series.py:91
+msgid "Series position must be unique for each book"
 msgstr ""
 
 #: bookwyrm/views/updates.py:46
